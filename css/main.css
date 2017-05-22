@@ -18,12 +18,19 @@
     font-weight: 800;
 }
 
+#main-banner span{
+    
+    background: -webkit-linear-gradient(left, #6B4DFB, #66BCFF);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
 #main-banner img{
-    width: 150px;
+    width: 200px;
     position: absolute;
     left: 50%;
-    margin-left: -75px;
-    margin-top: 40px;
+    margin-left: -80px;
+    margin-top: 22px;
 }
 
 
@@ -57,13 +64,12 @@
     font-size: 20px;
     font-weight: 600;
     line-height: 1.7;
-    margin-top: 80px;
-    margin-bottom: 75px;
+    margin-top: 160px;
+    margin-bottom: 200px;
 }
 
 #cas-description{
     position: relative;
-    background: #5A8DFC;
     padding-bottom: 50px;
 }
 
@@ -85,7 +91,10 @@
 }
 
 .full-width{    
-    background: #5A8DFC;
+    background: -webkit-linear-gradient(bottom left, #6B4DFB, #66BCFF);
+    background: -moz-linear-gradient(bottom left, #6B4DFB, #66BCFF);
+    background: -o-linear-gradient(bottom left, #6B4DFB, #66BCFF);
+    background: linear-gradient(to top right, #6B4DFB, #66BCFF);
 }
 
 #guy{
@@ -179,17 +188,57 @@
 /* General Styles */
 body{
     font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
 }
 
 
 @media (min-width: 768px) { 
 
+    /* Header */
+
+    #header-desktop{
+        padding-top: 30px;
+    }
+
+    #header-desktop #logo-desktop img{
+        width: 100px;        
+    }
+
+    #header-desktop #actions{
+        text-align: right;
+    }
+
+    #header-desktop #header-twitter img{
+        width: 16px;
+    }
+
+    #header-desktop #header-buy-ticket{
+        background: #648DFF;
+        border: none;
+        color: white;
+        padding: 5px 25px;
+        margin-left: 20px;
+    }
+
+    /*Banner*/
+
     #main-banner{
-        font-size: 50px;
+        font-size: 70px;
+        margin-top: 80px;
+        margin-bottom: 150px;
+    }    
+
+    #main-banner img{
+            width: 345px;
+            position: absolute;
+            left: 50%;
+            margin-left: -165px;
+            margin-top: 55px;
     }
 
     #casinfo{
-        margin-bottom: 150px;
+        margin-top: 90px;
+        margin-bottom: 150px;        
     }
 
     #cas-description{
@@ -222,8 +271,21 @@ body{
         margin-top: -40px;
     }
 
+    /* FIBES */
+    
+
+    #fibes h2{       
+        text-align: left;
+        font-size: 40px;      
+    }
+
+    #fibes p{       
+        text-align: left;
+        padding-left: 0px;
+    }
+
     .footer{
-        text-align: center;
+        text-align: left;
     }    
 }
 
