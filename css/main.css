@@ -10,6 +10,8 @@
     position: fixed;
     bottom: 0;
     z-index: 9999;
+    text-align: center;
+    text-decoration: none;
 }
 
 #logo-banner{
@@ -231,6 +233,7 @@ body{
         color: white;
         padding: 10px 30px;
         margin-left: 20px;
+        text-decoration: none;
     }
 
     /*Banner*/
