@@ -115,36 +115,36 @@
     margin-left: -15px;
 }
 
-#what-cas {
+.what-cas {
     color: white;
     margin-top: 20px;
 }
 
-#what-cas h2 {
+.what-cas h2 {
     text-align: center;
     font-weight: 900;
     font-size: 20px;
 }
 
-#what-cas p {
+.what-cas p {
     font-size: 15px;
     font-weight: normal;
     line-height: 1.5;
     margin-top: 20px;
 }
 
-#objetives-cas {
+.objetives-cas {
     color: white;
     margin-top: 30px;
 }
 
-#objetives-cas h2 {
+.objetives-cas h2 {
     text-align: center;
     font-weight: 900;
     font-size: 20px;
 }
 
-#objetives-cas p {
+.objetives-cas p {
     font-size: 15px;
     font-weight: normal;
     line-height: 1.5;
@@ -249,7 +249,7 @@ body {
         margin-right: -70px;
     }
 
-    #what-cas {
+    .what-cas {
         position: absolute;
     }
 
@@ -262,7 +262,7 @@ body {
         left: 0;
     }
 
-    #objetives-cas {
+    .objetives-cas {
         position: absolute;
         top: 0;
         right: 15px;
