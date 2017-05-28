@@ -2,6 +2,16 @@
     max-width: 1024px !important;
 }
 /* Layout */
+#mobile-buy-ticket{
+    background: #6B4DFB;
+    color: white;
+    padding: 10px;
+    border: none;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+}
+
 #logo-banner{
     text-align: center;
 }
@@ -189,7 +199,7 @@
 
 /* General Styles */
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: normal;
     padding-bottom: 20px;
 }
