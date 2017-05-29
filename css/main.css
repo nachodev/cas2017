@@ -2,6 +2,10 @@
     max-width: 1024px !important;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* Layout */
 #mobile-buy-ticket {
     background: #6B4DFB;
