@@ -87,72 +87,34 @@ img {
     padding-bottom: 50px;
 }
 
-#todo img {
-    float: right;
-    width: 90%;
-}
-
-#woman {
-    position: relative;
-}
-
-#woman img {
-    width: 100%;
-    float: right;
-    margin-top: -50px;
-    margin-right: -15px;
-}
-
-.full-width {
+.cas-info-background {
     background: -webkit-linear-gradient(bottom left, #6B4DFB, #66BCFF);
     background: -moz-linear-gradient(bottom left, #6B4DFB, #66BCFF);
     background: -o-linear-gradient(bottom left, #6B4DFB, #66BCFF);
     background: linear-gradient(to top right, #6B4DFB, #66BCFF);
 }
 
-#guy {
-    margin-top: 50px;
-}
-
-#guy img {
-    width: 100%;
-    margin-left: -15px;
-}
-
-.what-cas {
+.info-text {
     color: white;
     margin-top: 20px;
+    margin-bottom: 100px;
 }
 
-.what-cas h2 {
+.info-text h2 {
     text-align: center;
     font-weight: 900;
     font-size: 20px;
 }
 
-.what-cas p {
+.info-text p {
     font-size: 15px;
     font-weight: normal;
     line-height: 1.5;
     margin-top: 20px;
 }
 
-.objetives-cas {
-    color: white;
-    margin-top: 30px;
-}
-
-.objetives-cas h2 {
-    text-align: center;
-    font-weight: 900;
-    font-size: 20px;
-}
-
-.objetives-cas p {
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 1.5;
-    margin-top: 20px;
+.info-image img {
+    margin-top: -50px;
 }
 
 #fibes {
@@ -181,10 +143,6 @@ img {
     line-height: 1.5;
     margin-top: 80px;
     padding: 20px;
-}
-
-.footer .row {
-    margin-bottom: 20px;
 }
 
 /* General Styles */
@@ -247,32 +205,6 @@ body {
         padding-bottom: 65px;
     }
 
-    #woman img {
-        width: 600px;
-        right: 0;
-        margin-right: -70px;
-    }
-
-    .what-cas {
-        position: absolute;
-    }
-
-    #guy {
-        margin-top: 60px;
-    }
-
-    #guy img {
-        width: 650px;
-        left: 0;
-    }
-
-    .objetives-cas {
-        position: absolute;
-        top: 0;
-        right: 15px;
-        margin-top: -40px;
-    }
-
     /* FIBES */
     #fibes h2 {
         text-align: left;
@@ -294,9 +226,6 @@ body {
 }
 
 @media (min-width: 992px) {
-    #woman img {
-        margin-right: -70px;
-    }
 }
 
 
