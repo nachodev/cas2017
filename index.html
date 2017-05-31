@@ -7,58 +7,32 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<link href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin-ext" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="import" href="menu.html" id="link-menu">
+		<link rel="import" href="footer.html" id="link-footer">
 	</head>
 	<body>
-		<a id="mobile-buy-ticket"
-		   href="https://www.ticketea.com/entradas-conferencia-cas-2017/"
-		   class="visible-xs col-xs-12"
-		   target="_blank">
-			comprar tickets
-		</a>
-		<div class="container">
-			<div id="logo-banner" class="row visible-xs">
-				<div class="col-xs-12">
-					<div id="logo">
-						<img src="./images/logocas.png" alt="">
-					</div>
-				</div>
-			</div>
-			<div id="header-desktop" class="row hidden-xs">
-				<div id="logo-desktop" class="col-sm-6">
-					<img src="./images/logocas.png" alt="">
-				</div>
-				<div id="actions" class="col-sm-6">
-					<a id="header-twitter" href="https://twitter.com/confagilespain" target="_blank">
-						<img src="./images/twitter.svg">
-					</a>
-					<a href="https://www.ticketea.com/entradas-conferencia-cas-2017/"
-					   id="header-buy-ticket"
-					   target="_blank">Comprar Tickets</a>
-				</div>
-			</div>
-			<div id="main-content" class="row">
-				<div id="main-banner" class="col-xs-12 col-sm-8 col-sm-offset-2">
-					<span> CONFERENCE </span> <br>
-					<span> AGILE SPAIN 	</span>
-					<img src="./images/banner.png">
-				</div>
 
+		<script src="js/html-imports.js"></script>
+		<script src="js/imports.js"></script>
+
+		<div id="menu"></div>
+
+		<div id="main-content" class="row">
+			<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+				<h1 id="main-title"> CONFERENCIA AGILE SPAIN</h1>
+				<h2 id="main-subtitle"> Growing Up! From Zero to Hero! </h2>
+				<p class="main-info">09-10 de Noviembre en el Fibes, Sevilla</p>
 			</div>
-			<div class="row">
-				<div id="casinfo" class="col-xs-10 col-xs-offset-1">
-					09-10 Nov. Fibes, Sevilla. <br>
-					Growing Up! From Zero to Hero!
-				</div>
-			</div>
-		</div> <!-- end first container -->
-		<div class="cas-info-background">
+		</div>
+
+		<section class="gradient-background">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-5 col-sm-offset-1 col-xs-12 col-md-push-6 info-image">
-						<img src="images/girl.png" alt="">
+					<div class="col-sm-6 col-xs-12 col-md-push-6 padded">
+						<img src="images/cas1.jpg" alt="">
 					</div>
-					<div class="col-sm-5 col-sm-offset-1 col-xs-12 col-md-pull-6 info-text">
-						<h2>¿QUÉ ES LA CAS?</h2>
+					<div class="col-sm-6 col-xs-12 col-md-pull-6 info-text padded">
+						<h2 class="info-title">¿Qué es la CAS?</h2>
 						<p>
 							La CAS 2017 es un evento generado por personas que viven el desarrollo de software de
 							una manera diferente.</p>
@@ -69,13 +43,17 @@
 					</div>
 
 				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
 				<div class="row">
 
-					<div class="col-sm-5 col-sm-offset-1 col-xs-12 info-image">
-						<img src="images/boy.png" alt="">
+					<div class="col-sm-6 col-xs-12 padded">
+						<img src="images/cas2.jpg" alt="">
 					</div>
-					<div class="col-sm-5 col-sm-offset-1 info-text">
-						<h2>OBJETIVOS</h2>
+					<div class="col-sm-6 padded">
+						<h2 class="info-title">Objetivos</h2>
 						<p>
 							Promocionar y divulgar el uso de las metodologías ágiles en empresas españolas,
 							centros de investigación
@@ -93,43 +71,23 @@
 					</div>
 
 				</div>
-			</div> <!-- end container inside full width -->
-		</div>
-		<div class="container">
-			<div id="fibes" class="row">
-				<img src="./images/fibes.jpg" alt="" class="col-xs-12 col-sm-8 col-sm-push-4">
-				<div class="fibes-description col-xs-12 col-sm-4 col-sm-pull-8">
-					<h2>
-						Fibes
-					</h2>
-					<p class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0">
-						Palacio de exposiciones <br> y congresos de Sevilla
-					</p>
+			</div>
+		</section>
+		<section class="lightgray-background">
+			<div class="container">
+				<div id="fibes" class="row">
+					<img src="./images/fibes.jpg" alt="" class="col-sm-6 col-sm-push-6 col-xs-12 padded">
+					<div class="col-sm-6 col-sm-pull-6 col-xs-12 padded">
+						<h2 class="colored">Palacio de exposiciones y congresos de Sevilla</h2>
+						<p>Fibes, Feria Iberoamericana de Sevilla</p>
+						<p>Av. Alcalde Luis Uruñuela, 1</p>
+						<p><a href="https://flic.kr/p/vEQtjw">Foto por Sevilla Congress & Convention Bureau</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="container">
-			<div class="footer row">
-				<div class="col-sm-3 col-xs-6">
-					<p class="title">CAS ANTERIORES</p>
-					<p><a href="https://cas2016.agile-spain.org">2016</a></p>
-					<p><a href="https://cas2015.agile-spain.org">2015</a></p>
-				</div>
-				<div class="col-sm-3 col-xs-6">
-					<p>SIGUENOS</p>
-					<p><a href="https://twitter.com/confagilespain">Twitter</a></p>
-				</div>
-				<div class="clearfix visible-xs"></div>
-				<div class="col-sm-3 col-xs-6">
-					<p class="title">CONTACTO</p>
-					<p><a href="mailto:conferencia@agile-spain.org">conferencia@agile-spain.org</a></p>
-				</div>
-				<div class="col-sm-3 col-xs-6">
-					<p class="title">TERMINOS LEGALES</p>
-					<p>Política de privacidad</p>
-					<p>Código de conducta</p>
-				</div>
-			</div>
-		</div> <!-- fin container final -->
+		</section>
+
+		<div id="footer"></div>
+
 	</body>
 </html>
