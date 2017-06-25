@@ -1,8 +1,13 @@
 /* General styles */
 
+@font-face {
+    font-family: 'avenir';url('font/avenir-lt-std-55-roman.otf') format('otf'),
+}
+
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'avenir', 'Lato', sans-serif;
     font-weight: normal;
+    background: #EBF2F6;
 }
 
 img {
@@ -10,13 +15,13 @@ img {
 }
 
 p {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.5;
 }
 
 section {
-    padding-top: 50px;
-    padding-bottom: 50px
+    padding-top: 30px;
+    padding-bottom: 30px
 }
 
 .container {
@@ -61,21 +66,17 @@ section {
     font-weight: 800;
     text-align: center;
     color: #665EFB;
-    font-family: serif;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 50px;
+    background: linear-gradient(to right, #7135FB, #54BDFC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-#main-subtitle {
-    color: #665EFB;
-    font-family: serif;
+.main-subtitle {
+    color: #5A8CFC;
     text-align: center;
-}
-
-.main-info {
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 100px
+    font-weight: bold;
 }
 
 .gradient-background {
@@ -85,17 +86,8 @@ section {
     background: linear-gradient(to top right, #6B4DFB, #66BCFF);
 }
 
-.lightgray-background {
-    background-color: #F9F9F9
-}
-
 .info-text {
     color: white;
-}
-
-.info-title {
-    padding-bottom: 20px;
-    margin-top: 0
 }
 
 .colored {
@@ -104,6 +96,10 @@ section {
 
 .padded {
     padding: 25px;
+}
+
+#footer p {
+    font-size: 15px;
 }
 
 /*Media queries*/
