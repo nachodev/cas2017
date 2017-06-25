@@ -59,6 +59,15 @@ section {
     text-decoration: none;
 }
 
+.header-buy-ticket {
+    background: #648DFF;
+    border: none;
+    color: white;
+    padding: 9px 30px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
 /*CSS content*/
 
 #main-title {
@@ -77,6 +86,7 @@ section {
     color: #5A8CFC;
     text-align: center;
     font-weight: bold;
+    font-size: 30px;
 }
 
 .gradient-background {
@@ -98,8 +108,16 @@ section {
     padding: 25px;
 }
 
-#footer p {
+#footer-links p {
     font-size: 15px;
+}
+
+#sponsors {
+    text-align: center;
+}
+
+#sponsors img {
+    margin: 20px;
 }
 
 /*Media queries*/
@@ -118,15 +136,6 @@ section {
 
     #header-desktop #actions {
         text-align: right;
-    }
-
-    #header-desktop #header-buy-ticket {
-        background: #648DFF;
-        border: none;
-        color: white;
-        padding: 9px 30px;
-        margin-left: 20px;
-        text-decoration: none;
     }
 
 }
