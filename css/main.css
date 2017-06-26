@@ -28,6 +28,13 @@ section {
     max-width: 1024px !important;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
 /*Logos & banners*/
 
 #logo-banner {
@@ -46,6 +53,13 @@ section {
 #header-desktop #header-twitter img {
     width: 22px;
 }
+
+#header-desktop #actions .item {
+    margin: 0 40px 0 0;
+    font-size: 1.4em;
+}
+
+
 
 #mobile-buy-ticket {
     background: #6B4DFB;
@@ -143,6 +157,16 @@ section {
     top: -250px;
     position: relative;
     margin-bottom: -250px
+}
+
+.agenda.main-info {
+    margin-bottom: 20px;
+}
+
+.agenda.action-call {
+    margin: 20px 0 100px 0;
+    width: 100%;
+    text-align: center;
 }
 
 .gradient-background {
