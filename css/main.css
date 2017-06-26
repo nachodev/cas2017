@@ -85,10 +85,10 @@ section {
 .main-title {
     font-size: 70px;
     font-weight: 800;
-    text-align: center;
     color: #665EFB;
     margin-top: 50px;
     margin-bottom: 50px;
+    text-align: center;
 
     background: linear-gradient(to right, #7135FB, #54BDFC);
     -webkit-background-clip: text;
@@ -97,7 +97,6 @@ section {
 
 .section-title {
     font-size: 90px;
-    text-align: center;
     margin-bottom: 0;
 
     background: #5A8CFC;
@@ -126,6 +125,19 @@ section {
     text-align: center;
     font-weight: bold;
     font-size: 30px;
+}
+
+.section-image-title {
+    top: -100px;
+    position: relative;
+    margin-bottom: -100px
+}
+
+.speaker {
+    text-align: center;
+    top: -250px;
+    position: relative;
+    margin-bottom: -250px
 }
 
 .gradient-background {
