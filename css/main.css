@@ -69,16 +69,59 @@ section {
     text-decoration: none;
 }
 
+.header-buy-ticket:hover {
+    color: white;
+}
+
+.menu {
+    text-align: center;
+    font-size: 20px;
+}
+
+.menu a {
+    padding-right: 50px
+}
+
+.container-title {
+    padding-bottom: 70px
+}
+
 .main-title {
     font-size: 70px;
     font-weight: 800;
-    text-align: center;
     color: #665EFB;
     margin-top: 50px;
     margin-bottom: 50px;
+    text-align: center;
+
     background: linear-gradient(to right, #7135FB, #54BDFC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.section-title {
+    font-size: 90px;
+    margin-bottom: 0;
+
+    background: #5A8CFC;
+    -webkit-background-clip: text
+}
+
+.index-title-image {
+    background: url('../images/banner-home.png') no-repeat bottom center;
+}
+
+.index-workshop-image {
+    background: url('../images/banner-workshop.png') no-repeat bottom center;
+}
+
+.index-hotel-image {
+    background: url('../images/banner-alojamiento.png') no-repeat bottom center;
+}
+
+.container-subtitle {
+    padding-top: 40px;
+    padding-bottom: 40px
 }
 
 .main-subtitle {
@@ -86,6 +129,19 @@ section {
     text-align: center;
     font-weight: bold;
     font-size: 30px;
+}
+
+.section-image-title {
+    top: -100px;
+    position: relative;
+    margin-bottom: -100px
+}
+
+.speaker {
+    text-align: center;
+    top: -250px;
+    position: relative;
+    margin-bottom: -250px
 }
 
 .gradient-background {
@@ -97,6 +153,15 @@ section {
 
 .info-text {
     color: white;
+}
+
+.info-title-text {
+    padding-bottom: 30px;
+}
+
+#hotel a {
+    color: white;
+    text-decoration: underline;
 }
 
 .colored {
@@ -117,6 +182,15 @@ section {
 
 #sponsors img {
     margin: 20px;
+}
+
+.footer-sponsor-button {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.newline {
+    display: block;
 }
 
 /*Media queries*/
@@ -145,3 +219,4 @@ section {
         font-size: 40px;
     }
 }
+
