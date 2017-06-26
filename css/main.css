@@ -155,6 +155,10 @@ section {
     color: white;
 }
 
+.info-title-text {
+    padding-bottom: 30px;
+}
+
 #hotel a {
     color: white;
     text-decoration: underline;
