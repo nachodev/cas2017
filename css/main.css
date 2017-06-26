@@ -79,7 +79,8 @@ section {
 }
 
 .menu a {
-    padding-right: 50px
+    padding-right: 25px;
+    padding-left: 25px
 }
 
 .container-title {
