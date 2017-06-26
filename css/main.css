@@ -69,6 +69,19 @@ section {
     text-decoration: none;
 }
 
+.menu {
+    text-align: center;
+    font-size: 20px;
+}
+
+.menu a {
+    padding-right: 50px
+}
+
+.container-title {
+    padding-bottom: 70px
+}
+
 .main-title {
     font-size: 70px;
     font-weight: 800;
@@ -76,9 +89,36 @@ section {
     color: #665EFB;
     margin-top: 50px;
     margin-bottom: 50px;
+
     background: linear-gradient(to right, #7135FB, #54BDFC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.section-title {
+    font-size: 90px;
+    text-align: center;
+    margin-bottom: 0;
+
+    background: #5A8CFC;
+    -webkit-background-clip: text
+}
+
+.index-title-image {
+    background: url('../images/banner-home.png') no-repeat bottom center;
+}
+
+.index-workshop-image {
+    background: url('../images/banner-workshop.png') no-repeat bottom center;
+}
+
+.index-hotel-image {
+    background: url('../images/banner-alojamiento.png') no-repeat bottom center;
+}
+
+.container-subtitle {
+    padding-top: 40px;
+    padding-bottom: 40px
 }
 
 .main-subtitle {
@@ -119,6 +159,15 @@ section {
     margin: 20px;
 }
 
+.footer-sponsor-button {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.newline {
+    display: block;
+}
+
 /*Media queries*/
 
 @media (min-width: 768px) {
@@ -145,3 +194,4 @@ section {
         font-size: 40px;
     }
 }
+
