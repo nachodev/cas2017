@@ -36,6 +36,14 @@ a:hover {
     text-decoration: none;
 }
 
+.medium-padding {
+    padding: 25px;
+}
+
+.newline {
+    display: block;
+}
+
 /*Logos & banners*/
 
 #logo img {
@@ -53,7 +61,12 @@ a:hover {
     font-size: 1.4em;
 }
 
-#mobile-buy-ticket {
+.navbar-default {
+    background: none;
+    border: 0;
+}
+
+#action-button-mobile {
     background: #6B4DFB;
     color: white;
     padding-top: 10px;
@@ -66,44 +79,56 @@ a:hover {
     text-decoration: none;
 }
 
-.navbar-default {
-    background: none;
-    border: 0px;
-}
-
-.header-buy-ticket {
+.action-button {
     background: #648DFF;
     border: none;
     color: white;
-    padding: 9px 30px;
+    padding: 10px 30px;
     margin-left: 20px;
     text-decoration: none;
 }
 
-.header-buy-ticket:hover {
+.action-button:hover {
     color: white;
 }
 
-.menu {
+.menu-desktop {
     text-align: center;
     font-size: 20px;
+    font-weight: 700;
 }
 
-.menu a {
+.menu-desktop a {
     padding-right: 25px;
     padding-left: 25px
 }
+
+/*Containers*/
 
 .container-title {
     padding-bottom: 70px
 }
 
+.footer-sponsor-button {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container-subtitle {
+    padding-top: 40px;
+    padding-bottom: 40px
+}
+
+.info-title-text {
+    padding-bottom: 30px;
+}
+
+/*text*/
+
 .main-title {
-    font-size: 70px;
+    font-size: 45px;
     font-weight: 800;
     color: #665EFB;
-    margin-top: 50px;
-    margin-bottom: 50px;
     text-align: center;
 
     background: linear-gradient(to right, #7135FB, #54BDFC);
@@ -119,23 +144,6 @@ a:hover {
     -webkit-background-clip: text
 }
 
-.index-title-image {
-    background: url('../images/banner-home.png') no-repeat bottom center;
-}
-
-.index-workshop-image {
-    background: url('../images/banner-workshop.png') no-repeat bottom center;
-}
-
-.index-hotel-image {
-    background: url('../images/banner-alojamiento.png') no-repeat bottom center;
-}
-
-.container-subtitle {
-    padding-top: 40px;
-    padding-bottom: 40px
-}
-
 .main-subtitle {
     color: #5A8CFC;
     text-align: center;
@@ -149,6 +157,14 @@ a:hover {
     margin-bottom: -100px
 }
 
+.info-text {
+    color: white;
+}
+
+.colored {
+    color: #6B4DFB
+}
+
 .speaker {
     text-align: center;
     top: -250px;
@@ -156,14 +172,16 @@ a:hover {
     margin-bottom: -250px
 }
 
-.agenda.main-info {
-    margin-bottom: 20px;
+.index-title-image {
+    background: url('../images/banner-home.png') no-repeat bottom center;
 }
 
-.agenda.action-call {
-    margin: 20px 0 100px 0;
-    width: 100%;
-    text-align: center;
+.index-workshop-image {
+    background: url('../images/banner-workshop.png') no-repeat bottom center;
+}
+
+.index-hotel-image {
+    background: url('../images/banner-alojamiento.png') no-repeat bottom center;
 }
 
 .gradient-background {
@@ -173,30 +191,14 @@ a:hover {
     background: linear-gradient(to top right, #6B4DFB, #66BCFF);
 }
 
-.info-text {
-    color: white;
-}
-
-.info-title-text {
-    padding-bottom: 30px;
-}
+/*Hotel*/
 
 #hotel a {
     color: white;
     text-decoration: underline;
 }
 
-.colored {
-    color: #6B4DFB
-}
-
-.padded {
-    padding: 25px;
-}
-
-#footer-links p {
-    font-size: 15px;
-}
+/*Sponsors*/
 
 #sponsors {
     text-align: center;
@@ -206,13 +208,10 @@ a:hover {
     margin: 20px;
 }
 
-.footer-sponsor-button {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+/*Footer*/
 
-.newline {
-    display: block;
+#footer-links p {
+    font-size: 15px;
 }
 
 /*Media queries*/
