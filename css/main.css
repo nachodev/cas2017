@@ -35,19 +35,13 @@ a {
 a:hover {
     text-decoration: none;
 }
+
 /*Logos & banners*/
 
-#logo-banner {
-    text-align: center;
-}
-
-#logo {
-    padding: 10px 0 10px 0;
-    margin: 20px auto;
-}
-
 #logo img {
-    width: 150px;
+    margin-left: 15px;
+    height: 34px;
+    margin-top: 8px;
 }
 
 #header-desktop #header-twitter img {
@@ -58,8 +52,6 @@ a:hover {
     margin: 0 40px 0 0;
     font-size: 1.4em;
 }
-
-
 
 #mobile-buy-ticket {
     background: #6B4DFB;
@@ -72,6 +64,11 @@ a:hover {
     z-index: 9999;
     text-align: center;
     text-decoration: none;
+}
+
+.navbar-default {
+    background: none;
+    border: 0px;
 }
 
 .header-buy-ticket {

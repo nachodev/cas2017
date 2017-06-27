@@ -6,15 +6,32 @@
 		Consigue tu entrada
 	</a>
 
-	<div class="container">
-		<div id="logo-banner" class="row visible-xs">
-			<div class="col-xs-12">
-				<div id="logo">
-					<a href="index.html"><img src="./images/logocas.png" alt=""></a>
-				</div>
-			</div>
+	<nav class="navbar navbar-default visible-xs">
+
+		<div class="navbar-header">
+
+			<a id="logo" href="index.html"><img src="./images/logocas.png" alt=""></a>
+
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
 		</div>
-		<div id="header-desktop" class="row hidden-xs">
+
+		<div class="collapse navbar-collapse" id="navbar">
+			<ul class="nav navbar-nav">
+				<li><a href="alojamiento.html">ALOJAMIENTO</a></li>
+				<li><a href="c4p.html">CALL FOR PAPERS</a></li>
+				<li><a href="workshops.html">WORKSHOP</a></li>
+				<li><a href="agenda.html">AGENDA</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="container hidden-xs">
+		<div id="header-desktop" class="row">
 			<div id="logo-desktop" class="col-sm-2">
 				<a href="index.html"><img src="./images/logocas.png" alt=""></a>
 			</div>
@@ -30,7 +47,7 @@
 		</div>
 	</div>
 </section>
-<section>
+<section class="hidden-xs">
 	<div class="menu">
 		<a href="alojamiento.html">ALOJAMIENTO</a>
 		<a href="c4p.html">CALL FOR PAPERS</a>
