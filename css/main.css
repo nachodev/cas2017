@@ -88,6 +88,11 @@ a:hover {
     text-decoration: none;
 }
 
+.action-button.call-to-action {
+    padding: 10px 40px;
+    font-size: 20px;
+}
+
 .action-button:hover {
     color: white;
 }
@@ -152,9 +157,9 @@ a:hover {
 }
 
 .section-image-title {
-    top: -100px;
+    top: -75px;
     position: relative;
-    margin-bottom: -100px
+    margin-bottom: -75px
 }
 
 .info-text {
@@ -167,9 +172,9 @@ a:hover {
 
 .speaker {
     text-align: center;
-    top: -250px;
+    top: -230px;
     position: relative;
-    margin-bottom: -250px
+    margin-bottom: -230px
 }
 
 .index-title-image {
