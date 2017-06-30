@@ -105,7 +105,8 @@ a:hover {
 
 .menu-desktop a {
     padding-right: 25px;
-    padding-left: 25px
+    padding-left: 25px;
+    color: #648DFF
 }
 
 /*Containers*/
@@ -156,10 +157,13 @@ a:hover {
     font-size: 30px;
 }
 
+.section-image-speaker-title {
+    margin-top: -200px
+}
+
 .section-image-title {
-    top: -75px;
-    position: relative;
-    margin-bottom: -75px
+    margin-top: -50px;
+    text-align: left;
 }
 
 .info-text {
@@ -168,13 +172,6 @@ a:hover {
 
 .colored {
     color: #6B4DFB
-}
-
-.speaker {
-    text-align: center;
-    top: -230px;
-    position: relative;
-    margin-bottom: -230px
 }
 
 .index-title-image {
@@ -194,6 +191,10 @@ a:hover {
     background: -moz-linear-gradient(bottom left, #6B4DFB, #66BCFF);
     background: -o-linear-gradient(bottom left, #6B4DFB, #66BCFF);
     background: linear-gradient(to top right, #6B4DFB, #66BCFF);
+}
+
+.gradient-background img, #keynotes img, #fibes img {
+    box-shadow: 12px 12px 29px #555;
 }
 
 /*Hotel*/
@@ -243,6 +244,14 @@ a:hover {
 
     .main-title {
         font-size: 40px;
+    }
+
+    .section-image-speaker-title {
+        margin-top: -100px
+    }
+
+    .section-image-title {
+        margin-top: -20px;
     }
 }
 
