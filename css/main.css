@@ -19,6 +19,10 @@ p {
     line-height: 1.5;
 }
 
+ul {
+    font-size: 20px;
+}
+
 section {
     padding-top: 30px;
     padding-bottom: 30px
@@ -61,6 +65,18 @@ a:hover {
     font-size: 1.4em;
 }
 
+.menu-desktop {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.menu-desktop a {
+    padding-right: 25px;
+    padding-left: 25px;
+    color: #648DFF
+}
+
 .navbar-default {
     background: none;
     border: 0;
@@ -97,23 +113,7 @@ a:hover {
     color: white;
 }
 
-.menu-desktop {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.menu-desktop a {
-    padding-right: 25px;
-    padding-left: 25px;
-    color: #648DFF
-}
-
 /*Containers*/
-
-.container-title {
-    padding-bottom: 70px
-}
 
 .footer-sponsor-button {
     padding-top: 50px;
@@ -157,6 +157,10 @@ a:hover {
     font-size: 30px;
 }
 
+.main-smaller-subtitle {
+    font-size: 18px;
+}
+
 .section-image-speaker-title {
     margin-top: -200px
 }
@@ -174,18 +178,6 @@ a:hover {
     color: #6B4DFB
 }
 
-.index-title-image {
-    background: url('../images/banner-home.png') no-repeat bottom center;
-}
-
-.index-workshop-image {
-    background: url('../images/banner-workshop.png') no-repeat bottom center;
-}
-
-.index-hotel-image {
-    background: url('../images/banner-alojamiento.png') no-repeat bottom center;
-}
-
 .gradient-background {
     background: -webkit-linear-gradient(bottom left, #6B4DFB, #66BCFF);
     background: -moz-linear-gradient(bottom left, #6B4DFB, #66BCFF);
@@ -195,6 +187,20 @@ a:hover {
 
 .gradient-background img, #keynotes img, #fibes img {
     box-shadow: 12px 12px 29px #555;
+}
+
+.flex-column-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+
+.keynote-inspiration-text {
+    font-size: 20px;
+    font-weight: normal;
+    padding-top: 50px;
+    color: #5A8CFC;
+    text-align: center;
 }
 
 /*Hotel*/
@@ -254,4 +260,3 @@ a:hover {
         margin-top: -20px;
     }
 }
-
