@@ -19,6 +19,11 @@ HTMLImports.whenReady(function () {
         window.location.hash = '#' + language;
         e.preventDefault();
     };
+
+    if (window.location.hash.indexOf('en') !== -1 && language === 'es') {
+        language = 'en';
+        i18n.changeLanguage(language);
+    }
 });
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
