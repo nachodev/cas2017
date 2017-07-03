@@ -10,20 +10,29 @@ HTMLImports.whenReady(function () {
         defaultLanguage: 'es'
     });
 
-    var changeLanguage = document.getElementById('change-language');
+    var links = document.getElementsByClassName('change-language');
     var language = 'es';
-    changeLanguage.onclick = (e) => {
-        language = language === 'es' ? 'en' : 'es';
-        changeLanguage.textContent = language === 'es' ? 'English web' : 'Web en español';
-        i18n.changeLanguage(language);
-        window.location.hash = '#' + language;
-        e.preventDefault();
-    };
+    for (var i = 0; i < links.length; i++) {
+        var changeLanguage = links[i];
+        changeLanguage.onclick = (e) => {
+            language = language === 'es' ? 'en' : 'es';
+            var links = document.getElementsByClassName('change-language');
+            for (var i = 0; i < links.length; i++) {
+                links[i].textContent = language === 'es' ? 'EN' : 'ES';
+            }
+            i18n.changeLanguage(language);
+            window.location.hash = '#' + language;
+            e.preventDefault();
+        };
+    }
 
     if (window.location.hash.indexOf('en') !== -1 && language === 'es') {
         language = 'en';
         i18n.changeLanguage(language);
-        changeLanguage.textContent = language === 'es' ? 'English web' : 'Web en español';
+        for (var i = 0; i < links.length; i++) {
+            var changeLanguage = links[i];
+            changeLanguage.textContent = language === 'es' ? 'EN' : 'ES';
+        }
     }
 
     var nodes = document.querySelectorAll('[hasheable]');
