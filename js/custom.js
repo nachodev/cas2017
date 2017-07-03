@@ -23,6 +23,7 @@ HTMLImports.whenReady(function () {
     if (window.location.hash.indexOf('en') !== -1 && language === 'es') {
         language = 'en';
         i18n.changeLanguage(language);
+        changeLanguage.textContent = language === 'es' ? 'English web' : 'Web en español';
     }
 
     var nodes = document.querySelectorAll('[hasheable]');
