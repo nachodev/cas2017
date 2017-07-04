@@ -65,6 +65,17 @@ a:hover {
     font-size: 1.4em;
 }
 
+#actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#actions .action-button {
+    width: 200px;
+    text-align: center;
+}
+
 .menu-desktop {
     text-align: center;
     font-size: 20px;
