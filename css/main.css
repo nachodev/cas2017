@@ -184,7 +184,7 @@ a:hover {
     background: linear-gradient(to top right, #6B4DFB, #66BCFF);
 }
 
-.gradient-background img, #keynotes img, #fibes img {
+.gradient-background img, .keynotes img, #fibes img {
     box-shadow: 12px 12px 29px #555;
 }
 
@@ -198,6 +198,7 @@ a:hover {
     font-size: 20px;
     font-weight: normal;
     padding-top: 50px;
+    padding-bottom: 50px;
     color: #5A8CFC;
     text-align: center;
 }
