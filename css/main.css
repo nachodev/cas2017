@@ -49,6 +49,20 @@ a:hover {
 }
 
 /*Logos & banners*/
+.keynotes{
+    margin-top: 150px;
+}
+
+.keynotes-social-networks-container{
+    padding-left: 0;
+    text-align: center;
+}
+
+.keynotes-social-networks-container img{
+    width: 25px;
+    margin-right: 5px;
+    box-shadow: none !important;
+}
 
 #logo img {
     margin-left: 15px;
@@ -139,6 +153,10 @@ a:hover {
     padding-bottom: 30px;
 }
 
+#fibes{
+    margin-top: 100px;
+}
+
 /*text*/
 
 .main-title {
@@ -172,7 +190,7 @@ a:hover {
 }
 
 .section-image-speaker-title {
-    margin-top: -200px
+    margin-top: -230px
 }
 
 .section-image-title {
@@ -209,7 +227,7 @@ a:hover {
     font-size: 20px;
     font-weight: normal;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     color: #5A8CFC;
     text-align: center;
 }
