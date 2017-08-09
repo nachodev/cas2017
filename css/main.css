@@ -255,6 +255,16 @@ a:hover {
     font-size: 15px;
 }
 
+/*Banners*/
+
+#vote-banner{
+    text-align: center;
+}
+
+#vote-banner img{
+    margin-top: 20px;
+}
+
 /*Media queries*/
 
 @media (min-width: 768px) {
