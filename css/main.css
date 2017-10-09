@@ -299,3 +299,11 @@ a:hover {
         margin-top: -20px;
     }
 }
+
+
+
+/* Talks */
+
+.talk-description p{
+    font-size: 12px;
+}
