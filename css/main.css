@@ -304,6 +304,83 @@ a:hover {
 
 /* Talks */
 
-.talk-description p{
-    font-size: 12px;
+
+.talk-type{
+    position: relative;
+    margin-top: 30px;
 }
+
+.talk-type div{
+    background: #557BC2;
+    float: left;
+    padding: 5px;
+    color: white;
+    display: block;
+    position: relative;
+}
+
+.talk-type .decorator{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    margin-top: 20px;
+    transform: rotate(45deg);
+}
+
+
+.talks-table p, .talks-table li, .talks-table, .talk-description p{
+    font-size: 14px !important;
+}
+
+.talks-table .row{
+    display: flex;  
+}
+
+.talks-table .row:nth-child(2n){
+     background: #DBDFE9;
+}
+
+.talk-type.row{
+    margin-bottom: 20px;
+    background: none !important;
+}
+
+.talk-description{
+    border-left: 1px solid #C5C6D1;
+    font-size: 14px;  
+    padding: 10px;
+}
+
+.talk-author{
+    border-left: 1px solid #C5C6D1;
+    padding: 10px;
+}
+
+.talk-title{
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .talks-table .row{
+        flex-direction: column;
+    }    
+
+    .talk-title{
+        font-weight: bold;
+        padding-bottom: 0px;
+    }
+
+    .talk-author{
+        font-style: italic;
+        border-left: none;
+    }
+
+    .talk-description{
+        border-left: none;
+    }
+}
+
+
+
