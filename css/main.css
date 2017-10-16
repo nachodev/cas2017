@@ -8,6 +8,11 @@ body {
     font-family: 'avenir', 'Lato', sans-serif;
     font-weight: normal;
     background: #EBF2F6;
+    overflow-x: hidden;
+}
+
+body body{
+    background: transparent;
 }
 
 img {
@@ -24,7 +29,7 @@ ul {
 }
 
 section {
-    padding-top: 30px;
+    padding-top: 25px;
     padding-bottom: 30px
 }
 
@@ -34,6 +39,10 @@ section {
 
 a {
     text-decoration: none;
+}
+
+#main-content{
+    padding-bottom: 0px;
 }
 
 a:hover {
@@ -49,8 +58,24 @@ a:hover {
 }
 
 /*Logos & banners*/
+
+.background-banner{
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    position: absolute;
+    max-height: 70vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
 .keynotes{
     margin-top: 150px;
+    padding: 0 10px 0 10px;
 }
 
 .keynotes-social-networks-container{
@@ -74,6 +99,10 @@ a:hover {
     width: 22px;
 }
 
+#header-desktop #header-twitter{
+    margin-right: 20px;
+}
+
 #header-desktop #actions .item {
     margin: 0 40px 0 0;
     font-size: 1.4em;
@@ -90,16 +119,35 @@ a:hover {
     text-align: center;
 }
 
+.menu-home .menu-desktop a{
+    color: white;      
+}
+
+.menu-home .menu-desktop a{
+    text-decoration: none;
+}
+
 .menu-desktop {
     text-align: center;
     font-size: 20px;
-    font-weight: 700;
 }
 
 .menu-desktop a {
     padding-right: 25px;
     padding-left: 25px;
-    color: #648DFF
+    color: black;
+}
+
+#twitter-white{
+    display: none;
+}
+
+.menu-home #twitter-white{
+    display: block;
+}
+
+.menu-home #twitter-blue{
+    display: none;
 }
 
 .navbar-default {
@@ -146,7 +194,7 @@ a:hover {
 
 .container-subtitle {
     padding-top: 40px;
-    padding-bottom: 40px
+    padding-bottom: 25px;
 }
 
 .info-title-text {
@@ -155,34 +203,49 @@ a:hover {
 
 #fibes{
     margin-top: 100px;
+    padding: 0 10px;
 }
 
 /*text*/
 
 .main-title {
-    font-size: 45px;
+    font-size: 60px;
     font-weight: 800;
     color: #665EFB;
-    text-align: center;
+    text-align: center;   
+    margin-left: -30px;
+    text-transform: uppercase;
+}
 
-    background: linear-gradient(to right, #7135FB, #54BDFC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.main-title-banner{
+     color: white;
+     font-weight: 900;
+      text-align: left;   
+}
+
+.span-blue{
+    color: #4A89FA;
 }
 
 .section-title {
     font-size: 90px;
     margin-bottom: 0;
-
     background: #5A8CFC;
     -webkit-background-clip: text
 }
 
-.main-subtitle {
-    color: #5A8CFC;
+
+
+.main-subtitle{
+    color: #5A8CFC;     
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20p
+}
+
+#main-content .main-subtitle {
+    color: white;
+    text-align: left;
 }
 
 .main-smaller-subtitle {
@@ -190,7 +253,8 @@ a:hover {
 }
 
 .section-image-speaker-title {
-    margin-top: -230px
+    margin-top: -230px;
+    color: #4A89FA;
 }
 
 .section-image-title {
@@ -213,7 +277,17 @@ a:hover {
     background: linear-gradient(to top right, #6B4DFB, #66BCFF);
 }
 
-.gradient-background img, .keynotes img, #fibes img {
+.keynotes img.left{
+    align-self: flex-start;
+}
+
+.keynotes img.right{
+    align-self: flex-end;
+}
+
+
+
+.keynotes img, #fibes img {
     box-shadow: 12px 12px 29px #555;
 }
 
@@ -240,6 +314,11 @@ a:hover {
 }
 
 /*Sponsors*/
+
+.sponsors-title{
+    color: #5A8CFC;
+    font-weight: bold;
+}
 
 #sponsors {
     text-align: center;
@@ -289,6 +368,11 @@ a:hover {
 
     .main-title {
         font-size: 40px;
+        margin-left: 0;
+    }
+
+    .main-title-banner{
+        margin-left: 0px;
     }
 
     .section-image-speaker-title {
@@ -298,4 +382,228 @@ a:hover {
     .section-image-title {
         margin-top: -20px;
     }
+
+    #fibes .main-title{
+        margin-left: 0px;
+    }
 }
+
+
+
+/* Talks */
+
+
+.talk-type{
+    position: relative;
+    margin-top: 30px;
+}
+
+.talk-type div{
+    background: #557BC2;
+    float: left;
+    padding: 5px;
+    color: white;
+    display: block;
+    position: relative;
+}
+
+.talk-type .decorator{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    margin-top: 20px;
+    transform: rotate(45deg);
+}
+
+
+.talks-table p, .talks-table li, .talks-table, .talk-description p{
+    font-size: 14px !important;
+}
+
+.talks-table .row{
+    display: flex;  
+    margin-right: 5px;
+}
+
+.talks-table .row:nth-child(2n){
+     background: #DBDFE9;
+}
+
+.talk-type.row{
+    margin-bottom: 20px;
+    background: none !important;
+}
+
+.talk-description{
+    border-left: 1px solid #C5C6D1;
+    font-size: 14px;  
+    padding: 10px;
+}
+
+.talk-author{
+    border-left: 1px solid #C5C6D1;
+    padding: 10px;
+}
+
+.talk-title{
+    padding: 10px;
+}
+
+
+
+/* New Home */
+#todo img{
+    float: right;
+    width: 90%;
+}
+
+#woman{
+    position: relative;
+}
+
+#woman img{
+    width: 100%;
+    float: right;
+    margin-right: -15px;
+}
+
+.full-width{    
+    background: -webkit-linear-gradient(bottom left, #6B4DFB, #66BCFF);
+    background: -moz-linear-gradient(bottom left, #6B4DFB, #66BCFF);
+    background: -o-linear-gradient(bottom left, #6B4DFB, #66BCFF);
+    background: linear-gradient(to top right, #6B4DFB, #66BCFF);
+}
+
+#guy{
+    margin-top: 50px;
+}
+
+#guy img{
+    width: 800px;
+    margin-left: -75px;
+}
+
+#what-cas{
+    color: white;
+    margin-top: 20px;
+}
+
+#what-cas h2{
+    text-align: left;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+#what-cas p{
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+
+#objetives-cas{
+    color: white;
+    margin-top: 30px;
+}
+
+#objetives-cas h2{
+    text-align: left;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+#objetives-cas p{
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) { 
+     #casinfo{
+        margin-top: 70px;
+        margin-bottom: 150px;        
+    }
+
+    #cas-description{
+       padding-bottom: 65px;
+    }
+
+    #woman img{
+        width: 800px;
+        right: 0;
+        margin-right: -70px;
+    }
+
+    #what-cas{
+        position: absolute;
+        padding-left: 0;
+    }
+
+    #guy{
+        margin-top: 60px;
+    }
+
+     #guy img{
+        width: 800px;
+        left: 0;         
+    }
+
+    #objetives-cas{
+        position: absolute;
+        top: 0;
+        left: 75px;
+        margin-top: -40px;
+    }
+
+}
+
+@media (min-width: 992px) { 
+     #woman img{        
+        margin-right: -70px;
+    }
+}
+
+@media (max-width: 767px){
+      .talks-table .row{
+        flex-direction: column;
+    }    
+}
+
+@media (max-width: 768px) {
+    .talk-title{
+        font-weight: bold;
+        padding-bottom: 0px;
+    }
+
+    .talk-author{
+        font-style: italic;
+        border-left: none;
+    }
+
+    .talk-description{
+        border-left: none;
+    }
+
+    #guy img{
+        width: 800px;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #guy img{
+        margin-left: -80px;
+    }
+
+    #woman img{
+        margin-right: -140px;
+    }
+}
+
+
+
+
