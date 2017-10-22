@@ -391,68 +391,6 @@ a:hover {
 
 
 
-/* Talks */
-
-
-.talk-type{
-    position: relative;
-    margin-top: 30px;
-}
-
-.talk-type div{
-    background: #557BC2;
-    float: left;
-    padding: 5px;
-    color: white;
-    display: block;
-    position: relative;
-}
-
-.talk-type .decorator{
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    left: 50%;
-    bottom: -5px;
-    margin-top: 20px;
-    transform: rotate(45deg);
-}
-
-
-.talks-table p, .talks-table li, .talks-table, .talk-description p{
-    font-size: 14px !important;
-}
-
-.talks-table .row{
-    display: flex;  
-    margin-right: 5px;
-}
-
-.talks-table .row:nth-child(2n){
-     background: #DBDFE9;
-}
-
-.talk-type.row{
-    margin-bottom: 20px;
-    background: none !important;
-}
-
-.talk-description{
-    border-left: 1px solid #C5C6D1;
-    font-size: 14px;  
-    padding: 10px;
-}
-
-.talk-author{
-    border-left: 1px solid #C5C6D1;
-    padding: 10px;
-}
-
-.talk-title{
-    padding: 10px;
-}
-
-
 
 /* New Home */
 #todo img{
@@ -523,6 +461,78 @@ a:hover {
     margin-top: 20px;
 }
 
+
+/* Agenda */
+
+table.responsive{
+    color: #3892ED;
+    border: none;
+    font-weight: bold;
+}
+
+.responsive tr:nth-child(2n+1){
+    background: #E3E5E3;
+}
+
+.responsive th{
+    background: #3892ED;
+    color: white;
+    text-transform: uppercase;
+    height: 40px;
+    text-align: center;
+}
+
+.responsive td{
+    border-right: 1px solid #3892ED;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.responsive td.event{
+    text-align: center;
+}
+
+.responsive td:first-child, .responsive td:last-child{
+    border-right: none;
+}
+
+span.speaker {
+    color: black;
+    width: 100%;
+    display: block;
+    font-style: italic;
+    font-weight: normal;
+}
+
+span.speaker.first{
+    margin-bottom: 10px;
+}
+
+
+.double{
+    position: relative;
+}
+
+.joining{
+    position: absolute;
+    width: 1px;
+    height: 180px;
+    border: 1px solid;
+    left: 50%;
+    bottom: -50px;
+}
+
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+    }
+}
+
+
+
+
 @media (min-width: 768px) { 
      #casinfo{
         margin-top: 70px;
@@ -570,27 +580,7 @@ a:hover {
     }
 }
 
-@media (max-width: 767px){
-      .talks-table .row{
-        flex-direction: column;
-    }    
-}
-
 @media (max-width: 768px) {
-    .talk-title{
-        font-weight: bold;
-        padding-bottom: 0px;
-    }
-
-    .talk-author{
-        font-style: italic;
-        border-left: none;
-    }
-
-    .talk-description{
-        border-left: none;
-    }
-
     #guy img{
         width: 800px;
         margin-left: 0;
