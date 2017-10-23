@@ -531,6 +531,44 @@ span.speaker.first{
 }
 
 
+/* Agenda mobile */
+.mobile-table{
+    width: 100%;
+}
+
+.mobile-table span{
+    display: block;
+    width: 100%;
+}
+
+.mobile-table td, .mobile-table th{
+    padding: 10px;
+    display: block;
+    width: 100%;
+    clear: both;
+
+}
+
+
+.mobile-table th{
+    text-align: center;
+    color: white;
+    background: #5A8CFC;
+}
+
+.mobile-table .space{
+    color: #5A8CFC;
+    width: 100%;
+    clear: both;
+    display: block;
+
+}
+
+.mobile-table .event{
+    text-align: center;
+}
+
+
 
 
 @media (min-width: 768px) { 

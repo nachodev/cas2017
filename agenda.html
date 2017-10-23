@@ -6,12 +6,14 @@
         <link rel="stylesheet" href="css/main.css?v=2.0">
         <link rel="stylesheet" href="css/talks.css">
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/responsive-tabs.css">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<link href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin-ext" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="import" href="menu.html" id="link-menu">
 		<link rel="import" href="footer.html" id="link-footer">
-   
+        <script src="js/jquery.min.js"> </script>          
+        <script src="js/jquery.responsiveTabs.min.js"> </script>
 
     </head>
 
@@ -20,8 +22,7 @@
 		<script src="js/html-imports.js"></script>
 		<script src="js/custom.js"></script>
 
-		<div id="menu"></div>		
-
+		<div id="menu"></div>	
 
 		<section>
 			<div class="container">
@@ -44,409 +45,1239 @@
                 </div>                  
             </div>        
         </section>
-        <section class="container">
-            <div class="row">
-                <table class="responsive" border="1px solid">
-                    <thead>
-                        <tr>
-                            <th id="time">horas</th>
-                            <th class="talks">A.Al-Ándalus </th>
-                            <th class="talks">A.Itálica </th>                            
-                            <th class="talks">S.Albaicín </th>
-                            <th class="talks">S.Ronda</th>
-                            <th class="talks">S.Bahía </th>
-                            <th class="talks">S.Marismas</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>8:30</td>
-                           <td class="empty">
-                                checkin
-                            </td>
-                            <td class="empty">
-                              
-                            </td>
-                            <td class="empty">
-                               
-                            </td>
-                            <td class="empty">
-                               
-                            </td> 
-                            <td class="empty">
-                               
-                            </td>    
-                            <td class="empty">
-                               
-                            </td>          
-                        </tr>
-                        <tr>
-                            <td>
-                                8:30h/9:00h
-                            </td>
-                            <td class="event">
-                                <i class="fa fa-coffee" aria-hidden="true"></i>
-                            </td>
-                            <td class="event">
-                                <i class="fa fa-coffee" aria-hidden="true"></i>
-                            </td>
-                            <td class="event">
-                                <i class="fa fa-coffee" aria-hidden="true"></i>
-                            </td>
-                            <td class="event">
-                                <i class="fa fa-coffee" aria-hidden="true"></i>
-                            </td> 
-                            <td class="event">
-                                <i class="fa fa-coffee" aria-hidden="true"></i>
-                            </td>    
-                            <td class="event">
-                                <i class="fa fa-coffee" aria-hidden="true"></i>
-                            </td>                       
-                        </tr>
-                        <tr>
-                            <td>
-                                9:00h/9:15h
-                            </td>
-                            <td class="empty">
-                                Bienvenida
-                            </td>
-                            <td class="empty">
-                              
-                            </td>
-                            <td class="empty">
-                               
-                            </td>
-                            <td class="empty">
-                               
-                            </td> 
-                            <td class="empty">
-                               
-                            </td>    
-                            <td class="empty">
-                               
-                            </td>                          
-                        </tr>
-                        <tr>
-                            <td>
-                                 9:15h/10:00h
-                            </td>
-                            <td class="empty">
-                                KeyNote
-                            </td>
-                            <td class="empty">
-                              
-                            </td>
-                            <td class="empty">
-                               
-                            </td>
-                            <td class="empty">
-                               
-                            </td> 
-                            <td class="empty">
-                               
-                            </td>   
-                             <td class="empty">
-                               
-                            </td>                            
-                        </tr>
-                        <tr>
-                            <td>
-                                 10:00h/10:50h
-                            </td>
-                            <td>
-                                Scrum Studio: Creando iniciativas digitales en organizaciones tradicionales
-                                <span class="speaker"> Jerónimo Palacios</span>
-                            </td>
-                            <td>
-                                Agilidad, Scrum y Técnicas Ágiles de Desarrollo
-                                 <span class="speaker"> Raúl Herranz </span>
-                            </td>                            
-                            <td>
-                                Escalando las Montañas de la Auto-Organización
-                                 <span class="speaker"> Toni Rodríguez </span>
-                            </td>
-                            <td>
-                                Scrum@Scale
-                                 <span class="speaker"> Primitivo Cachero </span>
-                            </td>
-                            <td>
-                                Taller de Agile fuera de software
-                                 <span class="speaker"> Xavier Quesada </span>
-                            </td>
-                             <td>
-                                The 8 stances of a Scrum Master
-                                 <span class="speaker"> Barry Overeem </span>
-                            </td>
-                        </tr> 
-                        <tr>
-                            <td>
-                                10:50h/11:30h
-                            </td>
-                            <td class="event">
-                                <i class="fa fa-coffee" aria-hidden="true"></i>
-                            </td>
-                            <td class="event">
-                                <i class="fa fa-coffee" aria-hidden="true"></i>
-                            </td>
-                            <td class="event">
-                                <i class="fa fa-coffee" aria-hidden="true"></i>
-                            </td>
-                            <td class="event">
-                                <i class="fa fa-coffee" aria-hidden="true"></i>
-                            </td> 
-                            <td class="event">
-                                <i class="fa fa-coffee" aria-hidden="true"></i>
-                            </td>    
-                            <td class="event">
-                                <i class="fa fa-coffee" aria-hidden="true"></i>
-                            </td>                      
-                        </tr>        
-                        <tr>
-                            <td>
-                                11:30h/12:20h
-                            </td>
-                            <td>
-                                Slow Agile - ¡Que vuelvan los lentos!
-                                 <span class="speaker"> Thomas Wallet</span>
-                            </td>
-                            <td>
-                                Introducción a Agile - Límites del enfoque tradicional y evolución agile.
-                                <span class="speaker first"> Marga Bel Klever </span>
-                                 El Kanban todo terreno, herramienta elástica
-                                 <span class="speaker"> Sylvain Loubradou</span>
-                            </td>                            
-                            <td>
-                                Discusiones y decisiones: herramientas para la efectividad
-                                 <span class="speaker"> Toño de la Torre </span>
-                            </td>
-                            <td>
-                                Escalado. Hacerse adulto sin pasar por la adolescencia
-                                 <span class="speaker"> Adrián de la Horra </span>
-                            </td>
-                            <td class="double">
-                                Creando los cimientos de una cultura Agile
-                                 <span class="speaker"> Diego Rojas </span>
-                                 <div class="joining"></div>
-                            </td>
-                             <td class="double">
-                                ¡Deconstruyendo los roles de Scrum con LEGO!
-                                 <span class="speaker"> Santiago Vidal Gato </span>
-                                 <div class="joining"></div>
-                            </td>
-                        </tr>                         
-                        <tr>
-                            <td>
-                                 12:30h/13:20h
-                            </td>
-                             <td>
-                                De grupos de trabajo a equipos de alto rendimiento
-                                 <span class="speaker"> Israel Alcázar Rodríguez </span>
-                            </td>
-                            <td>
-                                Valores y principios en el diseño del software
-                                <span class="speaker"> Fran Reyes </span>
-                            </td>                           
-                            <td>
-                                La felicidad laboral en lo tangible
-                                 <span class="speaker"> Toño de la Torre </span>
-                            </td>
-                            <td>
-                                Argos, cuando Scrum no es suficiente
-                                 <span class="speaker"> Esther Peinado y Alberto Serrano </span>
-                            </td>        
-                            <td></td>
-                            <td></td>                                                
-                        </tr>
-                         <tr>
-                            <td>
-                                13:20h/14:40h
-                            </td>
-                            <td class="event">
-                               <i class="fa fa-cutlery" aria-hidden="true"></i>
-                            </td>
-                            <td class="event">
-                               <i class="fa fa-cutlery" aria-hidden="true"></i>
-                            </td>
-                            <td class="event">
-                               <i class="fa fa-cutlery" aria-hidden="true"></i>
-                            </td>
-                            <td class="event">
-                               <i class="fa fa-cutlery" aria-hidden="true"></i>
-                            </td> 
-                            <td class="event">
-                               <i class="fa fa-cutlery" aria-hidden="true"></i>
-                            </td>    
-                            <td class="event">
-                               <i class="fa fa-cutlery" aria-hidden="true"></i>
-                            </td>                          
-                        </tr>    
-                          <tr>
-                            <td>
-                                 14:40h <br>
-                                 15:30h
-                            </td>
-                             <td>
-                                Cómo organizar tu transformación Agile y que no se vuelva un lío
-                                 <span class="speaker"> Xavier Albaladejo</span>
-                            </td>
-                            <td>
-                                Scrum: Try again!
-                                <span class="speaker"> Benjamín Garrido Barreiro </span>                                
-                            </td>                           
-                            <td>
-                                No me llames Dolores, llámame Lola. Cultura de la Comunicación
-                                 <span class="speaker"> Antonio Martínez Albalá </span>
-                            </td>
-                            <td>
-                                Scrum y SAFe puestos en práctica: aterrizaje de roles en la realidad de un banco
-                                 <span class="speaker"> Ignacio Brime Yusta </span>
-                            </td>
-                            <td rowspan="2">
-                                KANBAN SYSTEM DESIGN - Toma el control para que puedas empezar a mejorar
-                                 <span class="speaker"> Gerard Chiva </span>
-                            </td>
-                             <td rowspan="2">
-                                Liderazgo para la transformación
-                                 <span class="speaker"> Jose Ramón Díaz </span>
-                            </td>
-                        </tr>   
-                        <tr>
-                            <td>
-                                 15:40h/16:30h
-                            </td>
-                             <td>
-                                Los domingos no eres ágil (y tenemos pruebas)
-                                <span class="speaker"> Nino Dafonte </span>
-                                Dieta Agile. No comas mejor, deja de comer peor
-                                <span class="speaker"> David Jiménez Sánchez</span>
-                            </td>
-                            <td>
-                                El PO como catalizador del cambio
-                                <span class="speaker"> Ferran Gomis de Dios </span>
-                                From zero to hero - arrancando un proyecto SCRUM
-                                <span class="speaker"> Raquel Pérez Bartolomé</span>
-                            </td>
-                           
-                            <td>
-                                Peer Learning Universites. Aprendiendo de los desafíos de Twitter
-                                <span class="speaker"> Aleix Palau Escursell </span>
-                                Cómo ser más feliz siendo Lean Thinker
-                                <span class="speaker"> Nati Vilela</span>
-                            </td>
-                            <td>
-                                La Retro de Portfolio
-                                <span class="speaker"> Gerardo Ponte </span>
-                                Effort Estimation vs Value Estimation
-                                <span class="speaker"> Sergi Casbas</span>
-                            </td>                            
-                        </tr> 
-                         <tr>
-                            <td>
-                                 16:30h/17:00h
-                            </td>
-                            <td class="event">
-                                <i class="fa fa-coffee" aria-hidden="true"></i>
-                            </td>
-                            <td class="event">
-                                <i class="fa fa-coffee" aria-hidden="true"></i>
-                            </td>
-                            <td class="event">
-                                <i class="fa fa-coffee" aria-hidden="true"></i>
-                            </td>
-                            <td class="event">
-                                <i class="fa fa-coffee" aria-hidden="true"></i>
-                            </td> 
-                            <td class="event">
-                                <i class="fa fa-coffee" aria-hidden="true"></i>
-                            </td>    
-                            <td class="event">
-                                <i class="fa fa-coffee" aria-hidden="true"></i>
-                            </td>                               
-                        </tr>  
-                        <tr>
-                            <td>
-                                17:00h/17:50h
-                            </td>
-                            <td>
-                                ¿Cómo convencer al Comité de Dirección para arrancar una transformación Agile?
-                                 <span class="speaker"> Carlos Moure García</span>
-                            </td>
-                            <td>
-                                En mi equipo esto funciona pero no sé porque
-                                 <span class="speaker"> Aitor Alzola </span>
-                            </td>                            
-                            <td>
-                                Guía de autocrecimiento del Scrum Master
-                                 <span class="speaker"> Gastón Valle</span>
-                            </td>
-                            <td>
-                                Nueve meses creando "ING Model Bank" partiendo del modelo Spotify
-                                 <span class="speaker"> Gemma Hornos Cirera y Nicolas Chaper </span>
-                            </td>
-                            <td>
-                                It’s more than drawing… become a visual facilitator today!
-                                 <span class="speaker"> Jaume Durany Vendrell y Juan Antonio Sosa</span>
-                            </td>
-                             <td>
-                                Taller de introducción al coaching. Cómo tener conversaciones diferentes.
-                                 <span class="speaker"> Marta San Martín Arribas </span>
-                            </td>
-                        </tr>     
-                        <tr>
-                            <td>
-                                 18:00h/19:00h
-                            </td>
-                            <td class="empty">
-                                Keynote - Marta
-                            </td>
-                            <td class="empty">
-                                
-                            </td>
-                            <td class="empty">
-                               
-                            </td>
-                            <td class="empty">
-                               
-                            </td> 
-                            <td class="empty">
-                               
-                            </td>    
-                            <td class="empty">
-                               
-                            </td>                          
-                        </tr>         
-                        <tr>
-                            <td>
-                                 18:50h <br>
-                                 19:00h
-                            </td>
-                            <td class="empty">
-                                Despedida hasta mañana 
-                            </td>
-                            <td class="empty">
-                                
-                            </td>
-                            <td class="empty">
-                               
-                            </td>
-                            <td class="empty">
-                               
-                            </td> 
-                            <td class="empty">
-                               
-                            </td>    
-                            <td class="empty">
-                               
-                            </td>                          
-                        </tr>                            
-                    </tbody>
-                </table>
-            </div>
+        <section class="container visible-xs-*">
+
+
+            <table class="mobile-table">
+                <tr>
+                    <th> 8:30h </th>
+                    <td> 
+                        <span class="event"> checkin </span>
+                    </td>
+                </tr>
+                <tr>                    
+                    <th> 8:30h/9:00h </th>
+                    <td> 
+                        <span class="event">
+                            <i class="fa fa-coffee" aria-hidden="true"></i>
+                            <i class="fa fa-coffee" aria-hidden="true"></i> 
+                            <i class="fa fa-coffee" aria-hidden="true"></i> 
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th> 9:00h/9:15h </th>
+                    <td>
+                        <span class="space">  A.Al-Ándalus </span>
+                        <span class="event"> Keynote </span>
+                    </td>
+                </tr>                
+                <tr>
+                    <th> 10:00h/10:50h </th>
+                    <td>
+                        <span class="space">  A.Al-Ándalus </span>
+                        <span class="mobile-title">
+                            Scrum Studio: Creando iniciativas digitales en organizaciones tradicionales</span>
+                        <span class="speaker">Jerónimo Palacios</span>
+                    </td>
+                    <td>
+                        <span class="space">  A.Itálica </span>
+                        <span class="mobile-title">Agilidad, Scrum y Técnicas Ágiles de Desarrollo</span>
+                        <span class="speaker">Raúl Herranz</span>
+                    </td>                            
+                    <td>
+                        <span class="space">  S.Albaicín </span>
+                        <span class="mobile-title">Escalando las Montañas de la Auto-Organización</span>
+                        <span class="speaker">Toni Rodríguez</span>
+                    </td>
+                    <td>
+                        <span class="space">  S.Ronda </span>
+                        <span class="mobile-title">Scrum@Scale</span>
+                        <span class="speaker">Primitivo Cachero</span>
+                    </td>
+                    <td>
+                        <span class="space">  S.Bahía </span>
+                        <span class="mobile-title">Taller de Agile fuera de software</span>
+                        <span class="speaker">Xavier Quesada</span>
+                    </td>
+                    <td> 
+                        <span class="space"> S.Marismas </span>
+                        <span class="mobile-title">The 8 stances of a Scrum Master</span>
+                        <span class="speaker">Barry Overeem</span>
+                    </td>
+                </tr>
+                <tr>                    
+                    <th> 10:50h/11:30h </th>
+                    <td> 
+                        <span class="event">
+                            <i class="fa fa-coffee" aria-hidden="true"></i>
+                            <i class="fa fa-coffee" aria-hidden="true"></i> 
+                            <i class="fa fa-coffee" aria-hidden="true"></i> 
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th> 11:30h/12:20h </th>
+                    <td>
+                        <span class="space">  A.Al-Ándalus </span>
+                        <span class="mobile-title">
+                            Slow Agile - ¡Que vuelvan los lentos!</span>
+                        <span class="speaker">Thomas Wallet</span>
+                    </td>
+                    <td>
+                        <span class="space">  A.Itálica </span>
+                        <span class="mobile-title">Introducción a Agile - Límites del enfoque tradicional y evolución agile.</span>
+                        <span class="speaker">Marga Bel Klever</span>
+                        <span class="mobile-title">El Kanban todo terreno, herramienta elástica</span>
+                        <span class="speaker">Sylvain Loubradou</span>
+                    </td>                            
+                    <td>
+                        <span class="space">  S.Albaicín </span>
+                        <span class="mobile-title">Discusiones y decisiones: herramientas para la efectividad</span>
+                        <span class="speaker">Toño de la Torre</span>
+                    </td>
+                    <td>
+                        <span class="space">  S.Ronda </span>
+                        <span class="mobile-title">Escalado. Hacerse adulto sin pasar por la adolescencia</span>
+                        <span class="speaker">Adrián de la Horra</span>
+                    </td>
+                    <td>
+                        <span class="space">  S.Bahía </span>
+                        <span class="mobile-title">Creando los cimientos de una cultura Agile</span>
+                        <span class="speaker">Diego Rojas</span>
+                    </td>
+                    <td> 
+                        <span class="space"> S.Marismas </span>
+                        <span class="mobile-title">¡Deconstruyendo los roles de Scrum con LEGO!</span>
+                        <span class="speaker">Santiago Vidal</span>
+                    </td>
+                </tr>    
+                <tr>
+                    <th> 12:30h/13:20h </th>
+                    <td>
+                        <span class="space">  A.Al-Ándalus </span>
+                        <span class="mobile-title">
+                            De grupos de trabajo a equipos de alto rendimiento</span>
+                        <span class="speaker">Israel Alcázar</span>
+                    </td>
+                    <td>
+                        <span class="space">  A.Itálica </span>
+                        <span class="mobile-title">Valores y principios en el diseño del software</span>
+                        <span class="speaker">Fran Reyes</span>                       
+                    </td>                            
+                    <td>
+                        <span class="space">  S.Albaicín </span>
+                        <span class="mobile-title">La felicidad laboral en lo tangible</span>
+                        <span class="speaker">Susana Morcuende</span>
+                    </td>
+                    <td>
+                        <span class="space">  S.Ronda </span>
+                        <span class="mobile-title">Argos, cuando Scrum no es suficiente</span>
+                        <span class="speaker">Esther Peinado y Alberto Serrano</span>
+                    </td> 
+                </tr>   
+                <tr>                    
+                    <th> 10:50h/11:30h </th>
+                    <td> 
+                        <span class="event">
+                            <i class="fa fa-cutlery" aria-hidden="true"></i>
+                            <i class="fa fa-cutlery" aria-hidden="true"></i>
+                            <i class="fa fa-cutlery" aria-hidden="true"></i>
+                        </span>
+                    </td>
+                </tr> 
+                <tr>
+                    <th> 14:40h/15:30h </th>
+                    <td>
+                        <span class="space">  A.Al-Ándalus </span>
+                        <span class="mobile-title">
+                            Cómo organizar tu transformación Agile y que no se vuelva un lío</span>
+                        <span class="speaker">Xavier Albaladejo</span>
+                    </td>
+                    <td>
+                        <span class="space">  A.Itálica </span>
+                        <span class="mobile-title">Scrum: Try again!</span>
+                        <span class="speaker">Benjamín Garrido</span>                        
+                    </td>                            
+                    <td>
+                        <span class="space">  S.Albaicín </span>
+                        <span class="mobile-title">No me llames Dolores, llámame Lola. Cultura de la Comunicación</span>
+                        <span class="speaker">Antonio Martínez</span>
+                    </td>
+                    <td>
+                        <span class="space">  S.Ronda </span>
+                        <span class="mobile-title">Scrum y SAFe puestos en práctica: aterrizaje de roles en la realidad de un banco</span>
+                        <span class="speaker">Ignacio Brime</span>
+                    </td>
+                    <td>
+                        <span class="space">  S.Bahía </span>
+                        <span class="mobile-title">KANBAN SYSTEM DESIGN - Toma el control para que puedas empezar a mejorar</span>
+                        <span class="speaker">Gerard Chiva</span>
+                    </td>
+                    <td> 
+                        <span class="space"> S.Marismas </span>
+                        <span class="mobile-title">Liderazgo para la transformación</span>
+                        <span class="speaker">Jose Ramón Díaz</span>
+                    </td>
+                </tr> 
+                <tr>
+                    <th> 15:40h/16:30h </th>
+                    <td>
+                        <span class="space">  A.Al-Ándalus </span>
+                        <span class="mobile-title">
+                            Los domingos no eres ágil (y tenemos pruebas)</span>
+                        <span class="speaker">Nino Dafonte</span>
+                         <span class="mobile-title">
+                           Dieta Agile. No comas mejor, deja de comer peor</span>
+                        <span class="speaker">David Jiménez</span>
+
+                    </td>
+                    <td>
+                        <span class="space">  A.Itálica </span>
+                        <span class="mobile-title">El PO como catalizador del cambio</span>
+                        <span class="speaker">Ferran Gomis</span>
+                        <span class="mobile-title">From zero to hero - arrancando un proyecto SCRUM</span>
+                        <span class="speaker">Raquel Pérez</span>
+                    </td>                            
+                    <td>
+                        <span class="space">  S.Albaicín </span>
+                        <span class="mobile-title">Peer Learning Universites. Aprendiendo de los desafíos de Twitter</span>
+                        <span class="speaker">Aleix Palau</span>
+                        <span class="mobile-title">Cómo ser más feliz siendo Lean Thinker</span>
+                        <span class="speaker">Nati Vilela</span>
+                    </td>
+                    <td>
+                        <span class="space">  S.Ronda </span>
+                        <span class="mobile-title">La Retro de Portfolio</span>
+                        <span class="speaker">Gerardo Ponte</span>
+                        <span class="mobile-title">Effort Estimation vs Value Estimation</span>
+                        <span class="speaker">Sergi Casbas</span>
+                    </td>                   
+                </tr>    
+                <tr>
+                    <th> 16:30h/17:00h   </th>
+                    <td> 
+                        <span class="event">
+                            <i class="fa fa-coffee" aria-hidden="true"></i>
+                            <i class="fa fa-coffee" aria-hidden="true"></i> 
+                            <i class="fa fa-coffee" aria-hidden="true"></i> 
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th> 17:00h/17:50h </th>
+                    <td>
+                        <span class="space">  A.Al-Ándalus </span>
+                        <span class="mobile-title">
+                            ¿Cómo convencer al Comité de Dirección para arrancar una transformación Agile?</span>
+                        <span class="speaker">Carlos Moure</span>
+                    </td>
+                    <td>
+                        <span class="space">  A.Itálica </span>
+                        <span class="mobile-title">En mi equipo esto funciona pero no sé porque</span>
+                        <span class="speaker">Aitor Alzola</span>
+                    </td>                            
+                    <td>
+                        <span class="space">  S.Albaicín </span>
+                        <span class="mobile-title">Guía de autocrecimiento del Scrum Master</span>
+                        <span class="speaker">Gastón Valle</span>
+                    </td>
+                    <td>
+                        <span class="space">  S.Ronda </span>
+                        <span class="mobile-title">Nueve meses creando "ING Model Bank" partiendo del modelo Spotify</span>
+                        <span class="speaker">Gemma Hornos y Nicolas Chaper</span>
+                    </td>
+                    <td>
+                        <span class="space">  S.Bahía </span>
+                        <span class="mobile-title">It’s more than drawing… become a visual facilitator today!</span>
+                        <span class="speaker">Jaume Durany y Juan Antonio Sosa</span>
+                    </td>
+                    <td> 
+                        <span class="space"> S.Marismas </span>
+                        <span class="mobile-title">Taller de introducción al coaching. Cómo tener conversaciones diferentes.</span>
+                        <span class="speaker">Marta San Martín</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th> 18:00h/19:00h </th>
+                    <td>
+                        <span class="space">  A.Al-Ándalus </span>
+                        <span class="event"> Keynote </span>
+                    </td>
+                </tr>    
+            </table>   
+
+            <!-- MOBILE FRIDAY -->
+                 <table class="mobile-table">
+                <tr>
+                    <th> 9:30h </th>
+                    <td> 
+                        <span class="event"> Bienvenida </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th> 9:15h/10:00h </th>
+                    <td>
+                        <span class="space"> A.Al-Ándalus </span>
+                        <span class="event"> Keynote: Barry </span>
+                    </td>
+                </tr>  
+                <tr>
+                    <th> 10:00h/10:50h </th>
+                    <td>
+                        <span class="space">  A.Al-Ándalus </span>
+                        <span class="mobile-title">
+                            No hay mejora de Customer Experience sin Agile</span>
+                        <span class="speaker">Carlos Iglesias</span>
+                    </td>
+                    <td>
+                        <span class="space">  A.Itálica </span>
+                        <span class="mobile-title">Agilidad (Hacia la entrega continua ¿Qué te lo impide?)</span>
+                        <span class="speaker">Eduardo Ferro</span>
+                    </td>                            
+                    <td>
+                        <span class="space">  S.Albaicín </span>
+                        <span class="mobile-title">Coaching con datos</span>
+                        <span class="speaker">Jaume Jornet</span>
+                    </td>
+                    <td>
+                        <span class="space">  S.Ronda </span>
+                        <span class="mobile-title">Running Sushi Product</span>
+                        <span class="speaker">Manuela Procopio y Alberto Gomez</span>
+                    </td>
+                    <td>
+                        <span class="space">  S.Bahía </span>
+                        <span class="mobile-title">Taller: Gamestorming</span>
+                        <span class="speaker">María José Contreras, Janire Paskua</span>
+                    </td>
+                    <td> 
+                        <span class="space"> S.Marismas </span>
+                        <span class="mobile-title">Taller: Training from the BACK of the Room. Aprendiendo a enseñar mejor</span>
+                        <span class="speaker">Miquel Rodríguez</span>
+                    </td>
+                </tr>
+                <tr>                    
+                    <th> 10:50h/11:30h </th>
+                    <td> 
+                        <span class="event">
+                            <i class="fa fa-coffee" aria-hidden="true"></i>
+                            <i class="fa fa-coffee" aria-hidden="true"></i> 
+                            <i class="fa fa-coffee" aria-hidden="true"></i> 
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th> 11:30h/12:20h </th>
+                    <td>
+                        <span class="space">  A.Al-Ándalus </span>
+                        <span class="mobile-title">
+                            Gestionando el roadmap de producto de forma efectiva</span>
+                        <span class="speaker">Vanesa Tejada</span>
+                    </td>
+                    <td>
+                        <span class="space">  A.Itálica </span>
+                        <span class="mobile-title">BDD: Colaborando de Verdad con Negocio</span>
+                        <span class="speaker">Eduardo Riol</span>
+                    </td>                            
+                    <td>
+                        <span class="space">  S.Albaicín </span>
+                        <span class="mobile-title">Communities of Practice - the not-so-hidden force behind Ericsson ICT Development Center's Agile Success</span>
+                        <span class="speaker">Almudena Rodriguez</span>
+                    </td>
+                    <td>
+                        <span class="space">  S.Ronda </span>
+                        <span class="mobile-title">Impedimentos: Gestión eficaz al escalar Scrum</span>
+                        <span class="speaker">Juan José del Campo</span>
+                    </td>
+                    <td>
+                        <span class="space">  S.Bahía </span>
+                        <span class="mobile-title">Aprendemos practicando y jugando</span>
+                        <span class="speaker">Elena Navarro Molina</span>
+                    </td>
+                    <td> 
+                        <span class="space"> S.Marismas </span>
+                        <span class="mobile-title">¡Design Thinking o cómo escapar de las viejas ideas!</span>
+                        <span class="speaker">Óscar Naveiras Picos</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th> 12:30h/13:20h </th>
+                    <td>
+                        <span class="space">  A.Al-Ándalus </span>
+                        <span class="mobile-title">
+                            Agilidad @ trivago</span>
+                        <span class="speaker">Marcos Pacheco Montero</span>
+                    </td>
+                    <td>
+                        <span class="space">  A.Itálica </span>
+                        <span class="mobile-title">Yo soy Dev, yo soy Ops y somos dos en un equipo</span>
+                        <span class="speaker">Luis Fraile y Leo Díaz</span>
+                    </td>                            
+                    <td>
+                        <span class="space">  S.Albaicín </span>
+                        <span class="mobile-title">Agile desde las trincheras: una historia de Agile Coaches</span>
+                        <span class="speaker">Juanma Gómez, Pep Ramírez, David González, Eduardo Cabrera</span>
+                    </td>
+                    <td>
+                        <span class="space">  S.Ronda </span>
+                        <span class="mobile-title">Transformación de la relación de la relación de IT con las unidades de negocio</span>
+                        <span class="speaker">Raquel Laina</span>
+                    </td>
+                </tr>
+                <tr>                    
+                    <th> 13:20h/14:40h </th>
+                    <td> 
+                        <span class="event">
+                            <i class="fa fa-cutlery" aria-hidden="true"></i>
+                            <i class="fa fa-cutlery" aria-hidden="true"></i>
+                            <i class="fa fa-cutlery" aria-hidden="true"></i>
+                        </span>
+                    </td>
+                </tr> 
+                <tr>
+                    <th> 14:40h/15:30h </th>
+                    <td>
+                        <span class="space">  A.Al-Ándalus </span>
+                        <span class="mobile-title">
+                            Khaleesi is coming! Cómo conquistar los 7 reinos de la Transformación Digital antes de que “Los Otros” (CIO) se te adelanten</span>
+                        <span class="speaker">Julián Gómez</span>
+                    </td>
+                    <td>
+                        <span class="space">  A.Itálica </span>
+                        <span class="mobile-title">TDD: Mi cuaderno de recetas</span>
+                        <span class="speaker">Modesto San Juan</span>
+                    </td>                            
+                    <td>
+                        <span class="space">  S.Albaicín </span>
+                        <span class="mobile-title">Ya somos ágiles ¿Y ahora qué?: The Big Bang Theory</span>
+                        <span class="speaker">José Antonio Ortega</span>
+                    </td>
+                    <td>
+                        <span class="space">  S.Ronda </span>
+                        <span class="mobile-title">Doble V: Vicios y Virtudes</span>
+                        <span class="speaker">José Ramón Gil</span>
+                    </td>
+                    <td>
+                        <span class="space">  S.Bahía </span>
+                        <span class="mobile-title">Taller de Facilitación Gráfica</span>
+                        <span class="speaker">Roberto Cruz</span>
+                    </td>
+                    <td> 
+                        <span class="space"> S.Marismas </span>
+                        <span class="mobile-title">Equipos Agiles Modo Bambú: Fuertes pero Flexibles</span>
+                        <span class="speaker">Jesus Mendez</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th> 14:40h/15:30h </th>
+                    <td>
+                        <span class="space">  A.Al-Ándalus </span>
+                        <span class="mobile-title">7 things an Agile Coach should know but doesn't</span>
+                        <span class="speaker">Steven Wallace</span>
+                        <span class="mobile-title">IKEA del siglo XXI. La transformación de la caja azul.</span>
+                        <span class="speaker">Pilar Garcia y Manu López</span>
+                    </td>
+                    <td>
+                        <span class="space">  A.Itálica </span>
+                        <span class="mobile-title">Hacking Scrum: piratas iterativos incrementales</span>
+                        <span class="speaker">Juan Bacardit</span>
+                        <span class="mobile-title">El arte de dar y recibir feedback</span>
+                        <span class="speaker">Raúl Quesada Pegalajar</span>
+                    </td>                            
+                    <td>
+                        <span class="space">  S.Albaicín </span>
+                        <span class="mobile-title">Promueve una comunidad de práctica en tu empresa</span>
+                        <span class="speaker">Daniel de la Cruz</span>
+                        <span class="mobile-title">Refactoring teams in an agile environment</span>
+                        <span class="speaker">Ricard Fusté y Albert Velasco</span>
+                    </td>
+                    <td>
+                        <span class="space">  S.Ronda </span>
+                        <span class="mobile-title">Haz lo que yo te diga, pero no lo que yo haga. ¿Y tu, Scrum Master o Agile Coach, sigues los principios ágiles?</span>
+                        <span class="speaker">Manolo López</span>
+                        <span class="mobile-title">Equipos autorganizados... y de managament... pues va a ser que si!</span>
+                        <span class="speaker">Joaquín Precioso Sánchez</span>
+                    </td>
+                </tr>
+                 <tr>                    
+                    <th> 16:30h/17:00h </th>
+                    <td> 
+                        <span class="event">
+                            <i class="fa fa-coffee" aria-hidden="true"></i>
+                            <i class="fa fa-coffee" aria-hidden="true"></i> 
+                            <i class="fa fa-coffee" aria-hidden="true"></i> 
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th> 17:00h/17:50h </th>
+                    <td>
+                        <span class="space">  A.Al-Ándalus </span>
+                        <span class="mobile-title">
+                            Experiencia de usuario como estrategia</span>
+                        <span class="speaker">Daniel Torres</span>
+                    </td>
+                    <td>
+                        <span class="space">  A.Itálica </span>
+                        <span class="mobile-title">Business Analysis, superpoderes para el Product Owner</span>
+                        <span class="speaker">Alfred Maeso</span>
+                    </td>                            
+                    <td>
+                        <span class="space">  S.Albaicín </span>
+                        <span class="mobile-title">En busca del tiempo perdido</span>
+                        <span class="speaker">David González</span>
+                    </td>
+                    <td>
+                        <span class="space">  S.Ronda </span>
+                        <span class="mobile-title">Communication strategies for scaled and distributed teams</span>
+                        <span class="speaker">Carlos Piqueres</span>
+                    </td>
+                    <td>
+                        <span class="space">  S.Bahía </span>
+                        <span class="mobile-title">Workshop: Juego de estrategia para product owners</span>
+                        <span class="speaker">Cristian Camilo</span>
+                    </td>
+                    <td> 
+                        <span class="space"> S.Marismas </span>
+                        <span class="mobile-title">Experience Self Organization at Scale</span>
+                        <span class="speaker">Adrian Perreau</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th> 9:00h/9:15h </th>
+                    <td>
+                        <span class="space">  A.Al-Ándalus </span>
+                        <span class="event"> Keynote </span>
+                    </td>
+                </tr>   
+            </table> 
         </section>
 
 
+        <section class="container hidden-xs">
+            <div id="responsiveTabs">
+                <ul>
+                    <li><a href="#thursday"> JUEVES </a></li>
+                    <li><a href="#friday"> VIERNES </a></li>
+                </ul>
 
-<div id="footer"></div>
+                <div class="row" id="thursday">
+                    <table class="responsive" border="1px solid">
+                        <thead>
+                            <tr>
+                                <th id="time">horas</th>
+                                <th class="talks">A.Al-Ándalus </th>
+                                <th class="talks">A.Itálica </th>                            
+                                <th class="talks">S.Albaicín </th>
+                                <th class="talks">S.Ronda</th>
+                                <th class="talks">S.Bahía </th>
+                                <th class="talks">S.Marismas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>8:30</td>
+                               <td class="empty">
+                                    checkin
+                                </td>
+                                <td class="empty">
+                                  
+                                </td>
+                                <td class="empty">
+                                   
+                                </td>
+                                <td class="empty">
+                                   
+                                </td> 
+                                <td class="empty">
+                                   
+                                </td>    
+                                <td class="empty">
+                                   
+                                </td>          
+                            </tr>
+                            <tr>
+                                <td>
+                                    8:30h/9:00h
+                                </td>
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td> 
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>    
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>                       
+                            </tr>
+                            <tr>
+                                <td>
+                                    9:00h/9:15h
+                                </td>
+                                <td class="empty">
+                                    Bienvenida
+                                </td>
+                                <td class="empty">
+                                  
+                                </td>
+                                <td class="empty">
+                                   
+                                </td>
+                                <td class="empty">
+                                   
+                                </td> 
+                                <td class="empty">
+                                   
+                                </td>    
+                                <td class="empty">
+                                   
+                                </td>                          
+                            </tr>
+                            <tr>
+                                <td>
+                                     9:15h/10:00h
+                                </td>
+                                <td class="empty">
+                                    KeyNote
+                                </td>
+                                <td class="empty">
+                                  
+                                </td>
+                                <td class="empty">
+                                   
+                                </td>
+                                <td class="empty">
+                                   
+                                </td> 
+                                <td class="empty">
+                                   
+                                </td>   
+                                 <td class="empty">
+                                   
+                                </td>                            
+                            </tr>
+                            <tr>
+                                <td>
+                                     10:00h/10:50h
+                                </td>
+                                <td>
+                                    Scrum Studio: Creando iniciativas digitales en organizaciones tradicionales
+                                    <span class="speaker"> Jerónimo Palacios</span>
+                                </td>
+                                <td>
+                                    Agilidad, Scrum y Técnicas Ágiles de Desarrollo
+                                     <span class="speaker"> Raúl Herranz </span>
+                                </td>                            
+                                <td>
+                                    Escalando las Montañas de la Auto-Organización
+                                     <span class="speaker"> Toni Rodríguez </span>
+                                </td>
+                                <td>
+                                    Scrum@Scale
+                                     <span class="speaker"> Primitivo Cachero </span>
+                                </td>
+                                <td>
+                                    Taller de Agile fuera de software
+                                     <span class="speaker"> Xavier Quesada </span>
+                                </td>
+                                 <td>
+                                    The 8 stances of a Scrum Master
+                                     <span class="speaker"> Barry Overeem </span>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td>
+                                    10:50h/11:30h
+                                </td>
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td> 
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>    
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>                      
+                            </tr>        
+                            <tr>
+                                <td>
+                                    11:30h/12:20h
+                                </td>
+                                <td>
+                                    Slow Agile - ¡Que vuelvan los lentos!
+                                     <span class="speaker"> Thomas Wallet</span>
+                                </td>
+                                <td>
+                                    Introducción a Agile - Límites del enfoque tradicional y evolución agile.
+                                    <span class="speaker first"> Marga Bel Klever </span>
+                                     El Kanban todo terreno, herramienta elástica
+                                     <span class="speaker"> Sylvain Loubradou</span>
+                                </td>                            
+                                <td>
+                                    Discusiones y decisiones: herramientas para la efectividad
+                                     <span class="speaker"> Toño de la Torre </span>
+                                </td>
+                                <td>
+                                    Escalado. Hacerse adulto sin pasar por la adolescencia
+                                     <span class="speaker"> Adrián de la Horra </span>
+                                </td>
+                                <td class="double">
+                                    Creando los cimientos de una cultura Agile
+                                     <span class="speaker"> Diego Rojas </span>
+                                     <div class="joining"></div>
+                                </td>
+                                 <td class="double">
+                                    ¡Deconstruyendo los roles de Scrum con LEGO!
+                                     <span class="speaker"> Santiago Vidal  </span>
+                                     <div class="joining"></div>
+                                </td>
+                            </tr>                         
+                            <tr>
+                                <td>
+                                     12:30h/13:20h
+                                </td>
+                                 <td>
+                                    De grupos de trabajo a equipos de alto rendimiento
+                                     <span class="speaker"> Israel Alcázar  </span>
+                                </td>
+                                <td>
+                                    Valores y principios en el diseño del software
+                                    <span class="speaker"> Fran Reyes </span>
+                                </td>                           
+                                <td>
+                                    La felicidad laboral en lo tangible
+                                     <span class="speaker"> Susana Morcuende </span>
+                                </td>
+                                <td>
+                                    Argos, cuando Scrum no es suficiente
+                                     <span class="speaker"> Esther Peinado y Alberto Serrano </span>
+                                </td>        
+                                <td></td>
+                                <td></td>                                                
+                            </tr>
+                             <tr>
+                                <td>
+                                    13:20h/14:40h
+                                </td>
+                                <td class="event">
+                                   <i class="fa fa-cutlery" aria-hidden="true"></i>
+                                </td>
+                                <td class="event">
+                                   <i class="fa fa-cutlery" aria-hidden="true"></i>
+                                </td>
+                                <td class="event">
+                                   <i class="fa fa-cutlery" aria-hidden="true"></i>
+                                </td>
+                                <td class="event">
+                                   <i class="fa fa-cutlery" aria-hidden="true"></i>
+                                </td> 
+                                <td class="event">
+                                   <i class="fa fa-cutlery" aria-hidden="true"></i>
+                                </td>    
+                                <td class="event">
+                                   <i class="fa fa-cutlery" aria-hidden="true"></i>
+                                </td>                          
+                            </tr>    
+                              <tr>
+                                <td>
+                                     14:40h/15:30h
+                                </td>
+                                 <td>
+                                    Cómo organizar tu transformación Agile y que no se vuelva un lío
+                                     <span class="speaker"> Xavier Albaladejo</span>
+                                </td>
+                                <td>
+                                    Scrum: Try again!
+                                    <span class="speaker"> Benjamín Garrido  </span>                                
+                                </td>                           
+                                <td>
+                                    No me llames Dolores, llámame Lola. Cultura de la Comunicación
+                                     <span class="speaker"> Antonio Martínez  </span>
+                                </td>
+                                <td>
+                                    Scrum y SAFe puestos en práctica: aterrizaje de roles en la realidad de un banco
+                                     <span class="speaker"> Ignacio Brime  </span>
+                                </td>
+                                <td class="double">
+                                    KANBAN SYSTEM DESIGN - Toma el control para que puedas empezar a mejorar
+                                     <span class="speaker"> Gerard Chiva </span>
+                                     <div class="joining" style="height: 100px; bottom: -90px;"></div>
+                                </td>
+                                 <td class="double">
+                                    Liderazgo para la transformación
+                                     <span class="speaker"> Jose Ramón Díaz </span>
+                                     <div class="joining" style="height: 100px; bottom: -90px;"></div>
+                                </td>
+                            </tr>   
+                            <tr>
+                                <td>
+                                     15:40h/16:30h
+                                </td>
+                                 <td>
+                                    Los domingos no eres ágil (y tenemos pruebas)
+                                    <span class="speaker first"> Nino Dafonte </span>
+                                    Dieta Agile. No comas mejor, deja de comer peor
+                                    <span class="speaker"> David Jiménez</span>
+                                </td>
+                                <td>
+                                    El PO como catalizador del cambio
+                                    <span class="speaker first"> Ferran Gomis </span>
+                                    From zero to hero - arrancando un proyecto SCRUM
+                                    <span class="speaker"> Raquel Pérez</span>
+                                </td>
+                               
+                                <td>
+                                    Peer Learning Universites. Aprendiendo de los desafíos de Twitter
+                                    <span class="speaker first"> Aleix Palau </span>
+                                    Cómo ser más feliz siendo Lean Thinker
+                                    <span class="speaker"> Nati Vilela</span>
+                                </td>
+                                <td>
+                                    La Retro de Portfolio
+                                    <span class="speaker"> Gerardo Ponte </span>
+                                    Effort Estimation vs Value Estimation
+                                    <span class="speaker"> Sergi Casbas</span>
+                                </td>  
+                                <td></td>
+                                <td></td>
+
+                            </tr> 
+                             <tr>
+                                <td>
+                                     16:30h/17:00h
+                                </td>
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td> 
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>    
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>                               
+                            </tr>  
+                            <tr>
+                                <td>
+                                    17:00h/17:50h
+                                </td>
+                                <td>
+                                    ¿Cómo convencer al Comité de Dirección para arrancar una transformación Agile?
+                                     <span class="speaker"> Carlos Moure </span>
+                                </td>
+                                <td>
+                                    En mi equipo esto funciona pero no sé porque
+                                     <span class="speaker"> Aitor Alzola </span>
+                                </td>                            
+                                <td>
+                                    Guía de autocrecimiento del Scrum Master
+                                     <span class="speaker"> Gastón Valle</span>
+                                </td>
+                                <td>
+                                    Nueve meses creando "ING Model Bank" partiendo del modelo Spotify
+                                     <span class="speaker"> Gemma Hornos y Nicolas Chaper </span>
+                                </td>
+                                <td>
+                                    It’s more than drawing… become a visual facilitator today!
+                                     <span class="speaker"> Jaume Durany y Juan Antonio Sosa</span>
+                                </td>
+                                 <td>
+                                    Taller de introducción al coaching. Cómo tener conversaciones diferentes.
+                                     <span class="speaker"> Marta San Martín </span>
+                                </td>
+                            </tr>     
+                            <tr>
+                                <td>
+                                     18:00h/19:00h
+                                </td>
+                                <td class="empty">
+                                    Keynote - Marta
+                                </td>
+                                <td class="empty">
+                                    
+                                </td>
+                                <td class="empty">
+                                   
+                                </td>
+                                <td class="empty">
+                                   
+                                </td> 
+                                <td class="empty">
+                                   
+                                </td>    
+                                <td class="empty">
+                                   
+                                </td>                          
+                            </tr>      
+                        </tbody>
+                    </table>               
+                </div>
+
+                <!-- FRIDAY -->
+                <div id="friday" class="row"> 
+                    <table class="responsive" border="1px solid">
+                        <thead>
+                            <tr>
+                                <th id="time">horas</th>
+                                <th class="talks">A.Al-Ándalus </th>
+                                <th class="talks">A.Itálica </th>                            
+                                <th class="talks">S.Albaicín </th>
+                                <th class="talks">S.Ronda</th>
+                                <th class="talks">S.Bahía </th>
+                                <th class="talks">S.Marismas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    9:00h/9:15h
+                                </td>
+                                <td class="empty">
+                                    Bienvenida
+                                </td>
+                                <td class="empty">
+                                  
+                                </td>
+                                <td class="empty">
+                                   
+                                </td>
+                                <td class="empty">
+                                   
+                                </td> 
+                                <td class="empty">
+                                   
+                                </td>    
+                                <td class="empty">
+                                   
+                                </td>                          
+                            </tr>
+                            <tr>
+                                <td>
+                                     9:15h/10:00h
+                                </td>
+                                <td class="empty">
+                                    KeyNote: Barry
+                                </td>
+                                <td class="empty">
+                                  
+                                </td>
+                                <td class="empty">
+                                   
+                                </td>
+                                <td class="empty">
+                                   
+                                </td> 
+                                <td class="empty">
+                                   
+                                </td>   
+                                 <td class="empty">
+                                   
+                                </td>                            
+                            </tr>                           
+                            <tr>
+                                <td>10:00h/10:50h</td>
+                               <td>
+                                     No hay mejora de Customer Experience sin Agile
+                                     <span class="speaker"> Carlos Iglesias</span>                                   
+                                </td>
+                                <td>
+                                     Agilidad (Hacia la entrega continua ¿Qué te lo impide?)
+                                     <span class="speaker"> Eduardo Ferro</span>   
+                                </td>
+                                <td>
+                                     Coaching con datos
+                                     <span class="speaker"> Jaume Jornet </span>   
+                                </td>
+                                <td>
+                                     Running Sushi Product
+                                     <span class="speaker"> Manuela Procopio y Alberto Gomez </span>   
+                                </td> 
+                                <td>
+                                     Taller: Gamestorming
+                                     <span class="speaker"> María José Contreras, Janire Paskua</span>   
+                                </td>    
+                                <td>
+                                     Taller: Training from the BACK of the Room. Aprendiendo a enseñar mejor
+                                     <span class="speaker"> Miquel Rodríguez  </span>   
+                                </td>          
+                            </tr>
+                            <tr>
+                                <td>
+                                    10:50h/11:30h
+                                </td>
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td> 
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>    
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>                       
+                            </tr>
+                            <tr>
+                                <td>
+                                    11:30h/12:20h
+                                </td>
+                                <td>
+                                    Gestionando el roadmap de producto de forma efectiva
+                                     <span class="speaker"> Vanesa Tejada </span>
+                                </td>
+                                <td>
+                                    BDD: Colaborando de Verdad con Negocio
+                                    <span class="speaker"> Eduardo Riol </span>
+                                    
+                                </td>                            
+                                <td>
+                                    Communities of Practice - the not-so-hidden force behind Ericsson ICT Development Center's Agile Success
+                                     <span class="speaker"> Almudena Rodriguez </span>
+                                </td>
+                                <td>
+                                    Impedimentos: Gestión eficaz al escalar Scrum
+                                     <span class="speaker"> Juan José del Campo </span>
+                                </td>
+                                <td class="double">
+                                    Aprendemos practicando y jugando
+                                     <span class="speaker"> Elena Navarro Molina </span>
+                                     <div class="joining" style="height: 100px; bottom: -90px;"></div>
+                                </td>
+                                 <td class="double">
+                                    ¡Design Thinking o cómo escapar de las viejas ideas!
+                                     <span class="speaker"> Óscar Naveiras Picos  </span>
+                                     <div class="joining" style="height: 100px; bottom: -90px;"></div>
+                                </td>         
+                            </tr>
+                             <tr>
+                                <td>
+                                    12:30h/13:20h
+                                </td>
+                                <td>
+                                    Agilidad @ trivago
+                                     <span class="speaker"> Marcos Pacheco Montero </span>
+                                </td>
+                                <td>
+                                    Yo soy Dev, yo soy Ops y somos dos en un equipo
+                                    <span class="speaker"> Luis Fraile y Leo Díaz </span>
+                                </td>                           
+                                <td>
+                                    Agile desde las trincheras: una historia de Agile Coaches
+                                     <span class="speaker"> Juanma Gómez, Pep Ramírez, David González, Eduardo Cabrera </span>
+                                </td>
+                                <td>
+                                    Transformación de la relación de la relación de IT con las unidades de negocio
+                                     <span class="speaker"> Raquel Laina </span>
+                                </td>        
+                                <td></td>
+                                <td></td>                        
+                            </tr>    
+                             <tr>
+                                <td>
+                                    13:20h/14:40h
+                                </td>
+                                <td class="event">
+                                   <i class="fa fa-cutlery" aria-hidden="true"></i>
+                                </td>
+                                <td class="event">
+                                   <i class="fa fa-cutlery" aria-hidden="true"></i>
+                                </td>
+                                <td class="event">
+                                   <i class="fa fa-cutlery" aria-hidden="true"></i>
+                                </td>
+                                <td class="event">
+                                   <i class="fa fa-cutlery" aria-hidden="true"></i>
+                                </td> 
+                                <td class="event">
+                                   <i class="fa fa-cutlery" aria-hidden="true"></i>
+                                </td>    
+                                <td class="event">
+                                   <i class="fa fa-cutlery" aria-hidden="true"></i>
+                                </td>          
+                            </tr>   
+                            <tr>
+                                <td>
+                                     14:40h/15:30h
+                                </td>
+                                <td>
+                                    Khaleesi is coming! Cómo conquistar los 7 reinos de la Transformación Digital antes de que “Los Otros” (CIO) se te adelanten
+                                     <span class="speaker"> Julián Gómez  </span>
+                                </td>
+                                <td>
+                                    TDD: Mi cuaderno de recetas
+                                    <span class="speaker"> Modesto San Juan </span>
+                                    
+                                </td>                            
+                                <td>
+                                    Ya somos ágiles ¿Y ahora qué?: The Big Bang Theory
+                                     <span class="speaker"> José Antonio Ortega  </span>
+                                </td>
+                                <td>
+                                    Doble V: Vicios y Virtudes
+                                     <span class="speaker"> José Ramón Gil  </span>
+                                </td>
+                                <td class="double">
+                                    Taller de Facilitación Gráfica
+                                     <span class="speaker"> Roberto Cruz  </span>
+                                     <div class="joining" style="height: 100px; bottom: -90px;"></div>
+                                </td>
+                                 <td class="double">
+                                    Equipos Agiles Modo Bambú: Fuertes pero Flexibles
+                                     <span class="speaker"> Jesus Mendez  </span>
+                                     <div class="joining" style="height: 100px; bottom: -90px;"></div>
+                                </td>         
+                            </tr> 
+                            <tr>
+                                <td>
+                                    15:40 - 16:30
+                                </td>
+                                <td>
+                                    7 things an Agile Coach should know but doesn't
+                                    <span class="speaker first"> Steven Wallace </span>
+                                     IKEA del siglo XXI. La transformación de la caja azul.
+                                     <span class="speaker"> Pilar Garcia y Manu López </span>
+                                </td>
+                                <td>Hacking Scrum: piratas iterativos incrementales
+                                    <span class="speaker first"> Juan Bacardit  </span>
+                                     El arte de dar y recibir feedback
+                                     <span class="speaker"> Raúl Quesada Pegalajar</span>
+                                </td>                           
+                                <td>
+                                   Promueve una comunidad de práctica en tu empresa
+                                    <span class="speaker first"> Daniel de la Cruz </span>
+                                     Refactoring teams in an agile environment
+                                     <span class="speaker"> Ricard Fusté y Albert Velasco</span>
+                                </td>
+                                <td>
+                                    Haz lo que yo te diga, pero no lo que yo haga. ¿Y tu, Scrum Master o Agile Coach, sigues los principios ágiles?
+                                    <span class="speaker first"> Manolo López </span>
+                                     Equipos autorganizados... y de managament... pues va a ser que si!
+                                     <span class="speaker"> Joaquín Precioso Sánchez</span>
+                                </td>        
+                                <td></td>
+                                <td></td>    
+                            </tr>
+                            <tr>
+                                <td>
+                                    16:30h/17:00h
+                                </td>
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td> 
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>    
+                                <td class="event">
+                                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                                </td>                       
+                            </tr>
+                            <tr>
+                                <td>17:00h/17:50h</td>
+                               <td>
+                                     Experiencia de usuario como estrategia
+                                     <span class="speaker"> Daniel Torres  </span>                                   
+                                </td>
+                                <td>
+                                     Business Analysis, superpoderes para el Product Owner
+                                     <span class="speaker"> Alfred Maeso  </span>   
+                                </td>
+                                <td>
+                                     En busca del tiempo perdido
+                                     <span class="speaker"> David González  </span>   
+                                </td>
+                                <td>
+                                     Communication strategies for scaled and distributed teams
+                                     <span class="speaker"> Carlos Piqueres  </span>   
+                                </td> 
+                                <td>
+                                     Workshop: Juego de estrategia para product owners
+                                     <span class="speaker"> Cristian Camilo </span>   
+                                </td>    
+                                <td>
+                                     Experience Self Organization at Scale
+                                     <span class="speaker"> Adrian Perreau  </span>   
+                                </td>          
+                            </tr>
+                            <tr>
+                                <td>
+                                     18:00h/19:00h
+                                </td>
+                                <td class="empty">
+                                    KeyNote: Barry
+                                </td>
+                                <td class="empty">
+                                  
+                                </td>
+                                <td class="empty">
+                                   
+                                </td>
+                                <td class="empty">
+                                   
+                                </td> 
+                                <td class="empty">
+                                   
+                                </td>   
+                                 <td class="empty">
+                                   
+                                </td>                            
+                            </tr>
+                        </tbody>
+                    </table>             
+
+                </div>              
+            </div>
+            
+        </section>
+
+        <div id="footer"></div>
+        <script>
+            $('#responsiveTabs').responsiveTabs({
+                startCollapsed: 'accordion'
+            });
+            console.log("Hola");
+        </script>    
 
 	</body>
 </html>
