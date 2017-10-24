@@ -523,6 +523,33 @@ a:hover {
     margin-top: 20px;
 }
 
+
+/* Cómo llegar */
+
+.google-maps {
+    position: relative;
+    padding-bottom: 25%; // This is the aspect ratio
+    height: 400px;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 400px !important;
+}
+
+@media (max-width: 768px) {
+   .google-maps{
+     display: none;
+   }
+}
+
+.how-to-access h2{
+    color: #3892ED;
+}
+
 @media (min-width: 768px) { 
      #casinfo{
         margin-top: 70px;
