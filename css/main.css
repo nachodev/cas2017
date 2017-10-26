@@ -163,7 +163,7 @@ a:hover {
     border: none;
     position: fixed;
     bottom: 0;
-    z-index: 9999;
+    z-index: 500;
     text-align: center;
     text-decoration: none;
 }
@@ -579,7 +579,7 @@ span.speaker.first{
 /* Modal Content */
 .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: #EAF2F6;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
@@ -629,6 +629,26 @@ span.speaker.first{
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
+}
+
+#talk-modal{
+    padding: 20px;
+}
+
+#talk-modal p{
+    font-size: 15px;
+}
+
+#talk-modal a{
+    margin-right: 15px;
+}
+
+#talk-modal img{
+    width: 200px;
+}
+
+#talk-modal h3, #talk-modal h4{
+    color: #0E92E9;
 }
 
 
