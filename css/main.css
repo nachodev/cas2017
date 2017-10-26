@@ -550,9 +550,6 @@ span.speaker.first{
 }
 
 
-
-
-
 @media screen and (max-width: 640px) {
     table {
         overflow-x: auto;
@@ -592,6 +589,11 @@ span.speaker.first{
     animation-duration: 0.4s
 }
 
+.modal-content p{
+    font-size: 14px;
+}
+
+
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
@@ -605,10 +607,13 @@ span.speaker.first{
 
 /* The Close Button */
 .close {
-    color: white;
+    color: #000;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 5px;   
 }
 
 .close:hover,
@@ -618,11 +623,7 @@ span.speaker.first{
     cursor: pointer;
 }
 
-.modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
+
 
 .modal-body {padding: 2px 16px;}
 
@@ -692,6 +693,15 @@ span.speaker.first{
     width: 100%;
 }
 
+.mobile-table i{
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.mobile-table .speaker{
+    font-weight: 500;
+}
+
 .mobile-table span{
     display: block;
     width: 100%;
@@ -702,7 +712,6 @@ span.speaker.first{
     display: block;
     width: 100%;
     clear: both;
-
 }
 
 
