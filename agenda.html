@@ -25,16 +25,15 @@
 
 		<div id="menu"></div>
 
-                <!-- Trigger/Open The Modal -->
-                <span class="close">&times;</span>
-        <button id="myBtn">Open Modal</button>
-
+              
+       
         <!-- The Modal -->
         <div id="myModal" class="modal">
 
           <!-- Modal content -->
           <div id="modal-content" class="modal-content">
-            
+                <!-- Trigger/Open The Modal -->
+                <span class="close">&times;</span>
           </div>
 
         </div>	
@@ -43,17 +42,12 @@
 
             // Get the modal
             var modal = document.getElementById('myModal');
-
-            // Get the button that opens the modal
-            var btn = document.getElementById("myBtn");
+           
 
             // Get the <span> element that closes the modal
             var span = document.getElementsByClassName("close")[0];
 
-            // When the user clicks on the button, open the modal 
-            btn.onclick = function() {
-                showDetails(1);
-            }
+            
 
             // When the user clicks on <span> (x), close the modal
             span.onclick = function() {
@@ -70,7 +64,6 @@
 
             /* My Code */
             var showDetails = function(id){
-                console.log("id: " + id);
                 var container = document.getElementById('modal-content');
                 var talk = getTalkById(id);
                 console.log(talk);
@@ -81,12 +74,15 @@
 
             var getTemplate = function(talk){
                 var template = '<div id="talk-modal">';
-                template += '<h3> ' + talk.title + '</h3>';
+                template += '<div id="talk-modal-talk">';
+                template += '<h3> ' + talk.title + '</h3>';  
+                template += '<p><b> ' + talk.format + '</b></p>';             
                 template += '<p> ' + talk.description + '</p>';
-                template += '<p> ' + talk.format + '</p>';
-                template += '<h4> ' + talk.name + '</h4>';                
-                template += '<p> <img src="images/speakers/' + talk['image'] + '"></p>';
+                template += '</div>';
+                template += '<div id="talk-modal-speaker">';
                 
+                template += '<h4> ' + talk.name + '</h4>';                
+                template += '<p> <img src="images/speakers/' + talk['image'] + '"></p>';                
                 if(talk.linkedin){
                     template += '<a href="' + talk.linkedin + '" target="_blank"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>' 
                     
@@ -99,7 +95,8 @@
                     template += '<a href="' + talk.web + '" target="_blank">wWw</a>' 
                     
                 }   
-                template += '<p> ' + talk['author-des'] + '</p>';
+                template += '<p id="talk-speaker-description"> ' + talk['author-des'] + '</p>';
+                template += '</div>';
                 template += '</div>';
                 return template;
             }
@@ -138,10 +135,10 @@
                     </div>
                     <div class="col-xs-12 col-sm-8 col-sm-offset-2 container-subtitle">
                         <p class="main-subtitle" data-translatable>
-                            ¡Ya tenemos las charlas aceptadas!
+                            Además de la agenda oficial de charlas,
                         </p>
-                        <p class="main-subtitle main-smaller-subtitle" data-translatable>
-                            Aún estamos trabajando en cuadrar la agenda, pero ya podemos ver qué charlas estarán. Este listado, aún puede sufrir algún cambio.                    
+                        <p class="main-subtitle main-smaller-subtitle">
+                             vamos a organizar una cena para los asistentes en uno de los puntos mas emblemáticos de Sevilla <a href="https://www.ticketea.com/entradas-networking-cena-cas-2017/" target="_blank" >. Saber más... </a>                   
                         </p>
                         <br/>                       
                     </div>
@@ -149,8 +146,13 @@
             </div>        
         </section>
         <section class="container visible-xs">
-
-            <table class="mobile-table">
+            <div id="responsiveTabs-mobile">
+                <ul>
+                    <li><a href="#thursday-mobile"> JUEVES </a></li>
+                    <li><a href="#friday-mobile"> VIERNES </a></li>
+                </ul>
+                <div class="row" id="thursday-mobile">
+                    <table class="mobile-table">
                 <tr>
                     <th> 8:30h </th>
                     <td> 
@@ -189,7 +191,7 @@
                     </td>                            
                     <td onClick="showDetails(43)">
                         <span class="space">  S.Albaicín </span>
-                        <span class="mobile-title">Escalando las Montañas de la Auto-Organización</span>
+                        <span class="mobile-title">Escalando la Cordillera de la Autogestión</span>
                         <span class="speaker">Toni Rodríguez</span>
                     </td>
                     <td onClick="showDetails(63)">
@@ -405,7 +407,7 @@
                     </td>
                     <td onClick="showDetails(66)">
                         <span class="space">  S.Ronda </span>
-                        <span class="mobile-title">Nueve meses creando "ING Model Bank" partiendo del modelo Spotify</span>
+                        <span class="mobile-title">Modelo Spotify como inspiración para crear una nueva unidad internacional de un gran banco.</span>
                         <span class="speaker">Gemma Hornos y Nicolas Chaper</span>
                     </td>
                     <td onClick="showDetails(11)">
@@ -426,10 +428,10 @@
                         <span class="event"> Keynote </span>
                     </td>
                 </tr>    
-            </table>   
-
-            <!-- MOBILE FRIDAY -->
-                 <table class="mobile-table">
+            </table> 
+                </div>
+                 <div id="friday-mobile" class="row"> 
+                     <table class="mobile-table">
                 <tr>
                     <th> 9:30h </th>
                     <td> 
@@ -689,6 +691,13 @@
                     </td>
                 </tr>   
             </table> 
+                 </div>
+            </div> <!-- end responsive tabs -->
+
+              
+
+            <!-- MOBILE FRIDAY -->
+                
         </section>
 
 
@@ -816,7 +825,7 @@
                                      <span class="speaker"> Raúl Herranz </span>
                                 </td>                            
                                 <td onClick="showDetails(43)">
-                                    Escalando las Montañas de la Auto-Organización
+                                    Escalando la Cordillera de la Autogestión
                                      <span class="speaker"> Toni Rodríguez </span>
                                 </td>
                                 <td onClick="showDetails(63)">
@@ -897,7 +906,7 @@
                                      12:30h/13:20h
                                 </td>
                                  <td onClick="showDetails(53)">
-                                    De grupos de trabajo a equipos de alto rendimiento
+                                    Trabajando con equipos de alto rendimiento
                                      <span class="speaker"> Israel Alcázar  </span>
                                 </td>
                                 <td onClick="showDetails(70)">
@@ -962,8 +971,8 @@
                                     KANBAN SYSTEM DESIGN - Toma el control para que puedas empezar a mejorar
                                      <span class="speaker"> Gerard Chiva </span>
                                      <div class="joining" style="height: 100px; bottom: -90px;"></div>
-                                </td onClick="showDetails(6)">
-                                 <td class="double">
+                                </td>
+                                 <td class="double" onClick="showDetails(6)">
                                     Liderazgo para la transformación
                                      <span class="speaker"> Jose Ramón Díaz </span>
                                      <div class="joining" style="height: 100px; bottom: -90px;"></div>
@@ -1058,7 +1067,7 @@
                                      <span class="speaker"> Gastón Valle</span>
                                 </td>
                                 <td onClick="showDetails(66)">
-                                    Nueve meses creando "ING Model Bank" partiendo del modelo Spotify
+                                    Modelo Spotify como inspiración para crear una nueva unidad internacional de un gran banco.
                                      <span class="speaker"> Gemma Hornos y Nicolas Chaper </span>
                                 </td>
                                 <td onClick="showDetails(11)">
@@ -1450,7 +1459,10 @@
         <script>
             $('#responsiveTabs').responsiveTabs({
                 startCollapsed: 'accordion'
-            });
+            });   
+             $('#responsiveTabs-mobile').responsiveTabs({
+                startCollapsed: 'accordion'
+            });            
         </script>    
 
 	</body>

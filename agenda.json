@@ -9,7 +9,7 @@
     "image": "gerard-chiva.jpg",
     "twitter": "@GerardChiva",
     "linkedin": "https://www.linkedin.com/in/gerardchiva/",
-    "web": "gerardchiva.com"
+    "web": "http://gerardchiva.com"
   },
   {
     "id": 2,
@@ -74,7 +74,7 @@
     "image": "jesusmendez.png",
     "twitter": "chuzzete",
     "linkedin": "https://www.linkedin.com/in/chuzzete/ ​",
-    "web": "www.jesusmendez.ca"
+    "web": "http://www.jesusmendez.ca"
   },
   {
     "id": 7,
@@ -234,7 +234,7 @@
     "image": "sylvain.jpg",
     "twitter": "sylvainpam18",
     "linkedin": "https://www.linkedin.com/in/sylvainloubradou/",
-    "web": "betaleadership.com"
+    "web": "http://betaleadership.com"
   },
   {
     "id": 20,
@@ -258,7 +258,7 @@
     "image": "gponte.jpg",
     "twitter": "",
     "linkedin": "es.linkedin.com/in/gponte",
-    "web": "www.scrumastering.com"
+    "web": "http://www.scrumastering.com"
   },
   {
     "id": 22,
@@ -421,7 +421,7 @@
     "image": "bacardit.png",
     "twitter": "juanbacardit",
     "linkedin": "https://www.linkedin.com/in/juanbacardit/",
-    "web": "www.juanbacardit.com"
+    "web": "http://www.juanbacardit.com"
   },
   {
     "id": 35,
@@ -457,7 +457,7 @@
     "image": "carlosmoure.jpg",
     "twitter": "carlosmoure",
     "linkedin": "https://es.linkedin.com/in/carlosmoure",
-    "web": "www.kairosds.com"
+    "web": "http://www.kairosds.com"
   },
   {
     "id": 38,
@@ -493,7 +493,7 @@
     "image": "davidargudo.jpg",
     "twitter": "dgargudo",
     "linkedin": "https://www.linkedin.com/in/david-gonz%C3%A1lez-argudo-34207551/",
-    "web": "www.enciendelaluz.es"
+    "web": "http://www.enciendelaluz.es"
   },
   {
     "id": 41,
@@ -529,7 +529,7 @@
     "image": "tonirodriguez.jpg",
     "twitter": "lezka",
     "linkedin": "https://www.linkedin.com/in/lezka/",
-    "web": "www.kaizentown.com"
+    "web": "http://www.kaizentown.com"
   },
   {
     "id": 44,
@@ -541,7 +541,7 @@
     "image": "wallet.jpg",
     "twitter": "WalletThomas",
     "linkedin": "https://www.linkedin.com/in/thomaswallet/",
-    "web": "www.elproximopaso.net"
+    "web": "http://www.elproximopaso.net"
   },
   {
     "id": 45,
@@ -601,7 +601,7 @@
     "image": "amalbala.jpg",
     "twitter": "am_albala",
     "linkedin": "https://www.linkedin.com/in/antoniomartinezalbala/",
-    "web": "amalbala.com"
+    "web": "http://amalbala.com"
   },
   {
     "id": 50,
@@ -637,13 +637,13 @@
     "image": "juanmagomez.jpg",
     "twitter": "JuanmaGomeR",
     "linkedin": "https://www.linkedin.com/in/juanmagomezr",
-    "web": "enciendelaluz.es",
+    "web": "http://enciendelaluz.es",
     "others": [{
         "name": "Eduardo Cabrera",
         "author-des": "Empresario, speaker y consultor de desarrollo organizacional y estratégico. Trabaja en Izada como Responsable del Área de Empresas y Organizaciones.<br>Trabaja acompañando a profesionales, equipos de trabajo y grandes empresas y organizaciones, hacia un desarrollo orientado a la eficiencia, la búsqueda de la felicidad laboral y el alto rendimiento, Desde hace 5 años vive y lee el mundo laboral desde Agile y Scrum.",
         "linkedin" : "https://www.linkedin.com/in/eduardocabreraalvarez/",
         "twitter" : "edu",
-        "web" : "izada.es"
+        "web" : "http://izada.es"
     },{
         "name": "Daniel Rodríguez Marco",
         "author-des": "En mis más de 15 años de experiencia en el mundo del desarrollo de productos software, he tenido la oportunidad de explorar, de primera mano, las necesidades de las grandes y medianas organizaciones de cara a comprender la manera en que funcionan internamente para conseguir sus objetivos estratégicos. Desde la puesta en juego desde diferentes roles en múltiples proyectos en varios sectores (telecomunicaciones, banca, I+D, energía, admininstración pública y seguros), descubrí el mundo Agile en 2007 y, desde entonces, he comprobado que, no solo es la manera más óptima de abordar sus necesidades, sino que además me ha proporcionado la mejor manera de crecer, como profesional y como persona, que conozco hasta la fecha.",
@@ -690,7 +690,7 @@
     "image": "danieltorres.png",
     "twitter": "torresburriel",
     "linkedin": "https://www.linkedin.com/in/torresburriel",
-    "web": "ttp://www.torresburriel.com"
+    "web": "http://www.torresburriel.com"
   },
   {
     "id": 56,
@@ -901,7 +901,7 @@
     "image": "gaston.jpg",
     "twitter": "GastonValle",
     "linkedin": "https://www.linkedin.com/in/gastonvalle/",
-    "web": "www.gastonvalle.com"
+    "web": "http://www.gastonvalle.com"
   },
   {
     "id": 73,
