@@ -25,7 +25,7 @@
   },
   {
     "id": 3,
-    "author-des": "Roberto Cruz Cantero",
+    "author-des": "Hace 9 años experimenté el trabajar con metodologías ágiles. Una vez interioricé los principios ágiles y entendí qué hay detrás de todo esto, quise ayudar a otros a conseguirlo y trabajé como Scrum Master. Comprendí que para que esto funcione de verdad había que trabajar también a nivel organización. Es por ello que desde hace 6 años acompaño y ayudo como Agile Coach a grandes organizaciones en su transformación Lean/Agile. ",
     "name": "Roberto Cruz Cantero",
     "title": "Taller de Facilitación Gráfica",
     "format": "Taller XL - 110 minutos",
@@ -37,7 +37,9 @@
     "others" : [{
         "name" : "David Fernández González",
         "author-des": "Más de 11 años en el mundo del software: Ingeniero de Software, Scrum Master, DevOps... y actualmente Agile Coach (ayudo a personas y ellas construyen organizaciones). Ingeniero Informático asturiano que ha trabajado en proyectos para: ArcelorMittal, CAPSA, Endesa, Telefónica, Banco Santander, BBVA o Repsol. Ha participado como ponente o facilitador en eventos como AOS, CAS, PAM o Codemotion.",
-        "linkedin": "https://www.linkedin.com/in/davidfergon/"
+        "linkedin": "https://www.linkedin.com/in/davidfergon/",
+        "twitter": "dafergon",
+        "image": "davidfernandez.jpg"
     }]
   },
   {
@@ -98,11 +100,7 @@
     "image": "",
     "twitter": "onaveiras",
     "linkedin": "https://www.linkedin.com/in/oscar-naveiras-picos/",
-    "web": "",
-    "others": [{
-        "name" : "Janire Paskua",
-        "twitter": "janirepaskua"
-    }]
+    "web": ""
   },
   {
     "id": 9,
@@ -162,7 +160,7 @@
     "image": "barry.jpg",
     "twitter": "Barryovereem",
     "linkedin": "https://www.linkedin.com/in/barryovereem/",
-    "web": ""
+    "web": "http://www.barryovereem.com/"
   },
   {
     "id": 14,
@@ -182,7 +180,7 @@
     "name": "Xavier Quesada Allue",
     "title": "Taller de Agile fuera de software",
     "format": "Taller L - 50 minutos",
-    "description": "<p>\n                           En este workshop que combina teoría y simulación, aprenderás como extender Scrum y Kanban a equipos que no hacen desarrollo de producto. Ejemplos: equipos de marketing, ventas, operaciones, administrativos, RRHH... aplica a todo equipo que trabaja en entornos mixtos de proyectos y BAU (Business as Usual) y también a la productividad personal. \n                        </p>",
+    "description": "<p>En este workshop que combina teoría y simulación, aprenderás como extender Scrum y Kanban a equipos que no hacen desarrollo de producto. Ejemplos: equipos de marketing, ventas, operaciones, administrativos, RRHH... aplica a todo equipo que trabaja en entornos mixtos de proyectos y BAU (Business as Usual) y también a la productividad personal. \n                        </p>",
     "image": "",
     "twitter": "",
     "linkedin": "",
@@ -228,9 +226,9 @@
     "id": 19,
     "author-des": "Ex directivo de logistica e informatica donde implante metodologias lean y agiles hasta llegar a la autoorganizacion, me denomino hacker organizativo y cultural por usar las metodologias como tecnica de desarrollo de la auto organización en las empresas y colectivos. Miembro de una familia auto-organizada participo a clasesagiles, laboratorio de Agilidad en escuelas en Catalunya.",
     "name": "Sylvain Loubradou",
-    "title": "El Kanban, herramienta todoterreno y elastica",
+    "title": "El Kanban, herramienta todoterreno y elástica",
     "format": "Charla M - 20 minutos",
-    "description": "<p>Hasta ahora, para entrar en distintos entornos que IT o marketing, he usado el Kanban como caballo de troya. Sus caracteristicas todo terreno y elasticas han sido mis mejores aliados para asegurar el exito de la implantacion agil más alla de la producción de software. Presentare los aspectos destacables necesarios para garantizar la adaptabilidad del metodo agil en cualquier terreno :)</p>",
+    "description": "<p>Hasta ahora, para entrar en distintos entornos que IT o marketing, he usado el Kanban como caballo de troya. Sus caracteristicas todo terreno y elásticas han sido mis mejores aliados para asegurar el exito de la implantacion agil más alla de la producción de software. Presentare los aspectos destacables necesarios para garantizar la adaptabilidad del metodo agil en cualquier terreno :)</p>",
     "image": "sylvain.jpg",
     "twitter": "sylvainpam18",
     "linkedin": "https://www.linkedin.com/in/sylvainloubradou/",
@@ -777,7 +775,7 @@
     "web": "https://www.lfraile.net",
     "others" : [{
         "name" : "Leo Díaz",
-        "author-des" : "desarrolla desde 2008 su actividad profesional en DEISER y se ha convertido en una de las personas en España que más y mejor conoce el mundo Atlassian y en especial JIRA; pero también Bitbucket, Bamboo, JIRA Service Desk y Confluence. Ha participado de manera directa en el proceso de implantación de herramientas Atlassian en organizaciones pertenecientes a todos los tamaños y sectores desde startups a empresas del IBEX35: Finanzas, Energía, Seguridad, Turismo, Servicios, Márketing.",
+        "author-des" : "Desarrolla desde 2008 su actividad profesional en DEISER y se ha convertido en una de las personas en España que más y mejor conoce el mundo Atlassian y en especial JIRA; pero también Bitbucket, Bamboo, JIRA Service Desk y Confluence. Ha participado de manera directa en el proceso de implantación de herramientas Atlassian en organizaciones pertenecientes a todos los tamaños y sectores desde startups a empresas del IBEX35: Finanzas, Energía, Seguridad, Turismo, Servicios, Márketing.",
         "linkedin" : "https://www.linkedin.com/in/leodmurillo/",
         "twitter" : "leodmurillo",
         "web" : "http://blog.deiser.com/author/leodmurillo/"
@@ -914,5 +912,51 @@
     "twitter": "vilelacarral",
     "linkedin": "https://www.linkedin.com/in/natividadvilelapmp/",
     "web": ""
+  },
+  {
+    "id": 74,
+    "author-des": "Barry is a freelance Scrum Master and Professional Scrum Trainer at Scrum.org. He’s an active member of the Scrum community and shares his insights and knowledge by speaking at conferences, facilitating workshops and writings blog posts.",
+    "name": "Barry Overeem",
+    "title": "Keynote: The 8 Stances of a Scrum Master",
+    "format": "Keynote",
+    "description": "",
+    "image": "barry.jpg",
+    "twitter": "Barryovereem",
+    "linkedin": "https://www.linkedin.com/in/barryovereem/",
+    "web": "http://www.barryovereem.com/"
+  },
+  {
+    "id": 76,
+    "author-des": "CEO & Founder of KAPS Management Group,, compañía especializada en transformación humana y digital. Experto en metodologías de que aseguren el éxito de la transformación digital, así como en la creación de productos y servicios que tengan en cuenta los últimos avances científicos y tecnológicos, que produzcan altos niveles de eficiencia en la empresa.",
+    "name": "Ramón Cabezas",
+    "title": "Transformación digital y humana",
+    "format": "Keynote",
+    "description": "",
+    "image": "ramoncabezas.jpg",
+    "twitter": "RamonCabezas",
+    "linkedin": "https://www.linkedin.com/in/francisco-ram%C3%B3n-cabezas-navas-a0479226/"
+  },
+  {
+    "id": 77,
+    "author-des": "Fundadora del Centro de Alto Rendimiento Vocal, Master en Michigan sobre Técnicas de Voz y Comunicación Oral con método propio llamado ‘AV’ y Diplomada en Logopedia por la Universidad Complutense de Madrid. Marta Pinillos es Asesora de Comunicación a políticos de primeras filas, ejecutivos y altos directivos del Real Madrid, Profesora en ESADE e IE Business School.",
+    "name": "Marta Pinillos",
+    "title": "Keynote: La voz, la clave del éxito en tu comunicación",
+    "format": "Keynote",
+    "description": "",
+    "image": "martapinillos.jpg",
+    "twitter": "pinillos_marta",
+    "linkedin": "https://www.linkedin.com/in/marta-pinillos-communication/?ppe=1",
+    "web": "http://www.barryovereem.com/"
+  },
+  {
+    "id": 78,
+    "author-des": "Neil is an internationally recognised expert in software product development, specialising in Agile and Lean methods. He has been delivering working software for over 20 years, including some of the first mapping and travel planning applications. He is also a pioneer of the #NoEstimates movement", 
+    "name": "Neil Killick",
+    "title": "Keynote: Agile works when it's not about Agile - A Paradox",
+    "format": "Keynote",
+    "description": "",
+    "image": "neil.jpg",
+    "twitter": "neil_killick",
+    "linkedin": "https://www.linkedin.com/in/neilkillick/"    
   }
 ]

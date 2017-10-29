@@ -513,6 +513,7 @@ table.responsive{
     border-right: 1px solid #3892ED;
     vertical-align: top;
     padding: 10px;
+    cursor: pointer;
 }
 
 .responsive td.event{

@@ -4,7 +4,6 @@
 		<title>CAS2017</title>
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css?v=2.0">
-        <link rel="stylesheet" href="css/talks.css">
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/responsive-tabs.css">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -60,7 +59,6 @@
             var showDetails = function(id){
                 var container = document.getElementById('modal-content');
                 var talk = getTalkById(id);
-                console.log(talk);
                 var template = getTemplate(talk);
                 container.innerHTML = template;
                 modal.style.display = "block";
@@ -76,8 +74,10 @@
                 template += '</div>';
                 template += '<div id="talk-modal-speaker">';
                 
-                template += '<h4> ' + talk.name + '</h4>';                
-                template += '<p> <img src="images/speakers/' + talk['image'] + '"></p>';                
+                template += '<h4> ' + talk.name + '</h4>';    
+                if(talk['image']){
+                    template += '<p> <img src="images/speakers/' + talk['image'] + '"></p>';                
+                }            
                 if(talk.linkedin){
                     template += '<a href="' + talk.linkedin + '" target="_blank"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>' 
                     
@@ -90,7 +90,29 @@
                     template += '<a href="' + talk.web + '" target="_blank">wWw</a>' 
                     
                 }   
-                template += '<p id="talk-speaker-description"> ' + talk['author-des'] + '</p>';
+                template += '<p id="talk-speaker-description"> ' + talk['author-des'] + '</p>';               
+                if(talk.others){                    
+                    for(var i=0; i < talk.others.length; i++){ 
+                        console.log(talk.others[i]);
+                        template += '<h4 style="margin-top: 40px;"> ' + talk.others[i].name + '</h4>';    
+                        if(talk.others[i]['image']){
+                            template += '<p> <img src="images/speakers/' + talk.others[i]['image'] + '"></p>';                
+                        }            
+                        if(talk.others[i].linkedin){
+                            template += '<a href="' + talk.others[i].linkedin + '" target="_blank"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>' 
+                            
+                        }
+                        if(talk.others[i].twitter){
+                            template += '<a href="https://twitter.com/' + talk.others[i].twitter + '" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i></a>' 
+                            
+                        }
+                          if(talk.others[i].web){
+                            template += '<a href="' + talk.others[i].web + '" target="_blank">wWw</a>' 
+                            
+                        }  
+                        template += '<p id="talk-speaker-description"> ' + talk.others[i]['author-des'] + '</p>';    
+                    }
+                }
                 template += '</div>';
                 template += '</div>';
                 return template;
@@ -130,12 +152,11 @@
                     </div>
                     <div class="col-xs-12 col-sm-8 col-sm-offset-2 container-subtitle">
                         <p class="main-subtitle" data-translatable>
-                            Además de la agenda oficial de charlas,
+                            Además de la agenda oficial de charlas
                         </p>
                         <p class="main-subtitle main-smaller-subtitle">
-                             vamos a organizar una cena para los asistentes en uno de los puntos mas emblemáticos de Sevilla <a href="https://www.ticketea.com/entradas-networking-cena-cas-2017/" target="_blank" >. Saber más... </a>                   
-                        </p>
-                        <br/>                       
+                             ofrecemos una cena para los asistentes en uno de los puntos mas emblemáticos de Sevilla <a href="https://www.ticketea.com/entradas-networking-cena-cas-2017/" target="_blank" >. Saber más... </a>                   
+                        </p>                                    
                     </div>
                 </div>                  
             </div>        
@@ -149,13 +170,13 @@
                 <div class="row" id="thursday-mobile">
                     <table class="mobile-table">
                 <tr>
-                    <th> 8:30h </th>
+                    <th> 8:00h/8:50h </th>
                     <td> 
-                        <span class="event"> checkin </span>
+                        <span class="event"> Check-in </span>
                     </td>
                 </tr>
                 <tr>                    
-                    <th> 8:30h/9:00h </th>
+                    <th> 8:00h/8:50h </th>
                     <td> 
                         <span class="event">
                             <i class="fa fa-coffee" aria-hidden="true"></i>
@@ -165,10 +186,18 @@
                     </td>
                 </tr>
                 <tr>
-                    <th> 9:00h/9:15h </th>
+                    <th> 8:50h/9:15h </th>
                     <td>
+                        <span class="space"> A.Al-Ándalus </span>
+                        <span class="event"> Bienvenida </span>
+                    </td>
+                </tr>    
+                <tr>
+                    <th> 9:15h/10:00h </th>
+                    <td onClick="showDetails(76)">
                         <span class="space">  A.Al-Ándalus </span>
-                        <span class="event"> Keynote </span>
+                        <span class="mobile-title"> Keynote: Transformación digital y humana </span>
+                         <span class="speaker">Ramón Cabezas</span>
                     </td>
                 </tr>                
                 <tr>
@@ -201,7 +230,7 @@
                     </td>
                     <td onClick="showDetails(13)"> 
                         <span class="space"> S.Marismas </span>
-                        <span class="mobile-title">The 8 stances of a Scrum Master</span>
+                        <span class="mobile-title">Taller: The 8 stances of a Scrum Master</span>
                         <span class="speaker">Barry Overeem</span>
                     </td>
                 </tr>
@@ -230,7 +259,7 @@
                             <span class="speaker">Marga Bel Klever</span>
                         </span>
                         <span onClick="showDetails(19)">
-                            <span class="mobile-title">El Kanban todo terreno, herramienta elástica</span>
+                            <span class="mobile-title">El Kanban, herramienta todoterreno y elástica</span>
                             <span class="speaker">Sylvain Loubradou</span>
                         </span>
                     </td>                            
@@ -246,12 +275,12 @@
                     </td>
                     <td onClick="showDetails(5)">
                         <span class="space">  S.Bahía </span>
-                        <span class="mobile-title">Creando los cimientos de una cultura Agile</span>
+                        <span class="mobile-title">Taller: Creando los cimientos de una cultura Agile</span>
                         <span class="speaker">Diego Rojas</span>
                     </td>
                     <td onClick="showDetails(4)"> 
                         <span class="space"> S.Marismas </span>
-                        <span class="mobile-title">¡Deconstruyendo los roles de Scrum con LEGO!</span>
+                        <span class="mobile-title">Taller: ¡Deconstruyendo los roles de Scrum con LEGO!</span>
                         <span class="speaker">Santiago Vidal</span>
                     </td>
                 </tr>    
@@ -314,12 +343,12 @@
                     </td>
                     <td onClick="showDetails(1)">
                         <span class="space">  S.Bahía </span>
-                        <span class="mobile-title">KANBAN SYSTEM DESIGN - Toma el control para que puedas empezar a mejorar</span>
+                        <span class="mobile-title">Taller: KANBAN SYSTEM DESIGN - Toma el control para que puedas empezar a mejorar</span>
                         <span class="speaker">Gerard Chiva</span>
                     </td>
                     <td onClick="showDetails(6)"> 
                         <span class="space"> S.Marismas </span>
-                        <span class="mobile-title">Liderazgo para la transformación</span>
+                        <span class="mobile-title">Taller: Liderazgo para la transformación</span>
                         <span class="speaker">Jose Ramón Díaz</span>
                     </td>
                 </tr> 
@@ -387,7 +416,7 @@
                     <td onClick="showDetails(37)">
                         <span class="space">  A.Al-Ándalus </span>
                         <span class="mobile-title">
-                            ¿Cómo convencer al Comité de Dirección para arrancar una transformación Agile?</span>
+                            Pedimos apoyo al más alto nivel, ¿cómo convencemos a un C-Level de una Transformación Agile?</span>
                         <span class="speaker">Carlos Moure</span>
                     </td>
                     <td onClick="showDetails(71)">
@@ -407,7 +436,7 @@
                     </td>
                     <td onClick="showDetails(11)">
                         <span class="space">  S.Bahía </span>
-                        <span class="mobile-title">It’s more than drawing… become a visual facilitator today!</span>
+                        <span class="mobile-title">Taller: It’s more than drawing… become a visual facilitator today!</span>
                         <span class="speaker">Jaume Durany y Juan Antonio Sosa</span>
                     </td>
                     <td onClick="showDetails(12)"> 
@@ -418,9 +447,10 @@
                 </tr>
                 <tr>
                     <th> 18:00h/19:00h </th>
-                    <td>
+                    <td onClick="showDetails(77)">
                         <span class="space">  A.Al-Ándalus </span>
-                        <span class="event"> Keynote </span>
+                        <span class="mobile-title"> Keynote: La voz, la clave del éxito en tu comunicación </span>
+                        <span class="speaker"> Marta Pinillos </span>
                     </td>
                 </tr>    
             </table> 
@@ -435,9 +465,10 @@
                 </tr>
                 <tr>
                     <th> 9:15h/10:00h </th>
-                    <td>
+                    <td onClick="showDetails(74)">
                         <span class="space"> A.Al-Ándalus </span>
-                        <span class="event"> Keynote: Barry </span>
+                        <span class="mobile-title"> Keynote: The 8 Stances of a Scrum Master </span>
+                        <span class="speaker">Barry Overeem</span>
                     </td>
                 </tr>  
                 <tr>
@@ -498,8 +529,7 @@
                         <span class="speaker">Eduardo Riol</span>
                     </td>                            
                     <td onClick="showDetails(17)">
-                        <span class="space">  S.Albaicín </span>
-                        <span class="mobile-title">Communities of Practice - the not-so-hidden force behind Ericsson ICT Development Center's Agile Success</span>
+                        <span class="space">  S.AlbComunidades de Practica – la fuerza no-tan-oculta impulsando el éxito de Ericsson ICT Development Center</span>
                         <span class="speaker">Almudena Rodriguez</span>
                     </td>
                     <td onClick="showDetails(59)">
@@ -578,7 +608,7 @@
                     <td onClick="showDetails(3)">
                         <span class="space">  S.Bahía </span>
                         <span class="mobile-title">Taller de Facilitación Gráfica</span>
-                        <span class="speaker">Roberto Cruz</span>
+                        <span class="speaker">Roberto Cruz y David Fernández</span>
                     </td>
                     <td onClick="showDetails(7)"> 
                         <span class="space"> S.Marismas </span>
@@ -617,7 +647,7 @@
                             <span class="speaker">Daniel de la Cruz</span>
                         </span>
                         <span onClick="showDetails(30)">
-                            <span class="mobile-title">Refactoring teams in an agile environment</span>
+                            <span class="mobile-title">Refactoring agile teams</span>
                             <span class="speaker">Ricard Fusté y Albert Velasco</span>
                         </span>
                     </td>
@@ -669,20 +699,21 @@
                     </td>
                     <td  onClick="showDetails(16)">
                         <span class="space">  S.Bahía </span>
-                        <span class="mobile-title">Workshop: Juego de estrategia para product owners</span>
+                        <span class="mobile-title">El Product Owner estratégico
                         <span class="speaker">Cristian Camilo</span>
                     </td>
                     <td  onClick="showDetails(14)">
                         <span class="space"> S.Marismas </span>
-                        <span class="mobile-title">Experience Self Organization at Scale</span>
+                        <span class="mobile-title">Auto organización a escala</span>
                         <span class="speaker">Adrian Perreau</span>
                     </td>
                 </tr>
                 <tr>
-                    <th> 9:00h/9:15h </th>
-                    <td>
+                    <th> 18:00h/18:50h </th>
+                    <td onClick="showDetails(78)">
                         <span class="space">  A.Al-Ándalus </span>
-                        <span class="event"> Keynote </span>
+                        <span class="mobile-title">Keynote: Agile works when it's not about Agile - A Paradox </span>
+                        <span class="speaker">Neil Killick</span>
                     </td>
                 </tr>   
             </table> 
@@ -718,9 +749,9 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>8:30</td>
-                               <td class="empty">
-                                    checkin
+                                <td>8:00h/8:50h</td>
+                               <td>
+                                    Check-in
                                 </td>
                                 <td class="empty">
                                   
@@ -740,7 +771,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    8:30h/9:00h
+                                    8:00h/8:50h
                                 </td>
                                 <td class="event">
                                     <i class="fa fa-coffee" aria-hidden="true"></i>
@@ -763,7 +794,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    9:00h/9:15h
+                                    8:50h/9:15h
                                 </td>
                                 <td class="empty">
                                     Bienvenida
@@ -788,8 +819,9 @@
                                 <td>
                                      9:15h/10:00h
                                 </td>
-                                <td class="empty">
-                                    KeyNote
+                                <td onClick="showDetails(76)">
+                                     Keynote: Transformación digital y humana
+                                    <span class="speaker"> Ramón Cabezas </span>
                                 </td>
                                 <td class="empty">
                                   
@@ -869,11 +901,11 @@
                                 </td>
                                 <td>
                                     <span onClick="showDetails(18)">     
-                                        Introducción a Agile - Límites del enfoque tradicional y evolución agile.
+                                        Introducción a Agile - Límites del enfoque tradicional y evolución agile
                                         <span class="speaker first"> Marga Bel Klever </span>
                                     </span>
                                     <span onClick="showDetails(19)">
-                                         El Kanban todo terreno, herramienta elástica
+                                         El Kanban, herramienta todoterreno y elástica
                                          <span class="speaker"> Sylvain Loubradou</span>
                                     </span>
                                 </td>                            
@@ -886,12 +918,12 @@
                                      <span class="speaker"> Adrián de la Horra </span>
                                 </td>
                                 <td  onClick="showDetails(5)" class="double">
-                                    Creando los cimientos de una cultura Agile
+                                    Taller: Creando los cimientos de una cultura Agile
                                      <span class="speaker"> Diego Rojas </span>
                                      <div class="joining"></div>
                                 </td>
                                  <td  onClick="showDetails(4)" class="double">
-                                    ¡Deconstruyendo los roles de Scrum con LEGO!
+                                    Taller: ¡Deconstruyendo los roles de Scrum con LEGO!
                                      <span class="speaker"> Santiago Vidal  </span>
                                      <div class="joining"></div>
                                 </td>
@@ -963,12 +995,12 @@
                                      <span class="speaker"> Ignacio Brime  </span>
                                 </td>
                                 <td class="double" onClick="showDetails(1)">
-                                    KANBAN SYSTEM DESIGN - Toma el control para que puedas empezar a mejorar
+                                    Taller KANBAN SYSTEM DESIGN - Toma el control para que puedas empezar a mejorar
                                      <span class="speaker"> Gerard Chiva </span>
                                      <div class="joining" style="height: 100px; bottom: -90px;"></div>
                                 </td>
                                  <td class="double" onClick="showDetails(6)">
-                                    Liderazgo para la transformación
+                                    Taller de Liderazgo para la transformación
                                      <span class="speaker"> Jose Ramón Díaz </span>
                                      <div class="joining" style="height: 100px; bottom: -90px;"></div>
                                 </td>
@@ -1050,7 +1082,7 @@
                                     17:00h/17:50h
                                 </td>
                                 <td onClick="showDetails(37)">
-                                    ¿Cómo convencer al Comité de Dirección para arrancar una transformación Agile?
+                                    Pedimos apoyo al más alto nivel, ¿cómo convencemos a un C-Level de una Transformación Agile?
                                      <span class="speaker"> Carlos Moure </span>
                                 </td>
                                 <td onClick="showDetails(71)">
@@ -1066,7 +1098,7 @@
                                      <span class="speaker"> Gemma Hornos y Nicolas Chaper </span>
                                 </td>
                                 <td onClick="showDetails(11)">
-                                    It’s more than drawing… become a visual facilitator today!
+                                    Taller: It’s more than drawing… become a visual facilitator today!
                                      <span class="speaker"> Jaume Durany y Juan Antonio Sosa</span>
                                 </td>
                                  <td onClick="showDetails(12)">
@@ -1078,8 +1110,9 @@
                                 <td>
                                      18:00h/19:00h
                                 </td>
-                                <td class="empty">
-                                    Keynote - Marta
+                                <td onClick="showDetails(77)">
+                                    <span class="mobile-title"> Keynote: La voz, la clave del éxito en tu comunicación </span>
+                                    <span class="speaker"> Marta Pinillos </span>
                                 </td>
                                 <td class="empty">
                                     
@@ -1096,7 +1129,7 @@
                                 <td class="empty">
                                    
                                 </td>                          
-                            </tr>      
+                            </tr>                              
                         </tbody>
                     </table>               
                 </div>
@@ -1143,8 +1176,9 @@
                                 <td>
                                      9:15h/10:00h
                                 </td>
-                                <td class="empty">
-                                    KeyNote: Barry
+                                <td onClick="showDetails(74)">
+                                    Keynote: The 8 Stances of a Scrum Master
+                                     <span class="speaker"> Barry Overeem</span>
                                 </td>
                                 <td class="empty">
                                   
@@ -1226,20 +1260,20 @@
                                     
                                 </td>                            
                                 <td onClick="showDetails(17)">
-                                    Communities of Practice - the not-so-hidden force behind Ericsson ICT Development Center's Agile Success
-                                     <span class="speaker"> Almudena Rodriguez </span>
+                                    Comunidades de Practica – la fuerza no-tan-oculta impulsando el éxito de Ericsson ICT Development Center
+                                     <span class="speaker"> Almudena Rodríguez </span>
                                 </td>
                                 <td onClick="showDetails(59)">
                                     Impedimentos: Gestión eficaz al escalar Scrum
                                      <span class="speaker"> Juan José del Campo </span>
                                 </td>
                                 <td onClick="showDetails(2)" class="double">
-                                    Aprendemos practicando y jugando
+                                    Taller: Aprendemos practicando y jugando
                                      <span class="speaker"> Elena Navarro Molina </span>
                                      <div class="joining" style="height: 100px; bottom: -90px;"></div>
                                 </td>
                                  <td onClick="showDetails(8)" class="double">
-                                    ¡Design Thinking o cómo escapar de las viejas ideas!
+                                    Taller: ¡Design Thinking o cómo escapar de las viejas ideas!
                                      <span class="speaker"> Óscar Naveiras Picos  </span>
                                      <div class="joining" style="height: 100px; bottom: -90px;"></div>
                                 </td>         
@@ -1313,11 +1347,11 @@
                                 </td>
                                 <td onClick="showDetails(3)" class="double">
                                     Taller de Facilitación Gráfica
-                                     <span class="speaker"> Roberto Cruz  </span>
+                                     <span class="speaker"> Roberto Cruz y David Fernández</span>
                                      <div class="joining" style="height: 100px; bottom: -90px;"></div>
                                 </td>
                                  <td onClick="showDetails(7)" class="double">
-                                    Equipos Agiles Modo Bambú: Fuertes pero Flexibles
+                                    Taller: Equipos Agiles Modo Bambú: Fuertes pero Flexibles
                                      <span class="speaker"> Jesús Méndez  </span>
                                      <div class="joining" style="height: 100px; bottom: -90px;"></div>
                                 </td>         
@@ -1352,7 +1386,7 @@
                                         <span class="speaker first"> Daniel de la Cruz </span>
                                     </span>
                                     <span onClick="showDetails(30)">
-                                         Refactoring teams in an agile environment
+                                         Refactoring agile teams
                                          <span class="speaker"> Ricard Fusté y Albert Velasco</span>
                                     </span>
                                 </td>
@@ -1411,20 +1445,46 @@
                                      <span class="speaker"> Carlos Piqueres  </span>   
                                 </td> 
                                 <td onClick="showDetails(16)">
-                                     Workshop: Juego de estrategia para product owners
+                                     Taller: El Product Owner estratégico
                                      <span class="speaker"> Cristian Camilo </span>   
                                 </td>    
                                 <td onClick="showDetails(14)">
-                                     Experience Self Organization at Scale
+                                     Taller: Auto organización a escala
                                      <span class="speaker"> Adrian Perreau  </span>   
                                 </td>          
                             </tr>
                             <tr>
                                 <td>
-                                     18:00h/19:00h
+                                     18:00h/18:50h
+                                </td>
+                                <td onClick="showDetails(78)">
+                                    Keynote: Agile works when it's not about Agile - A Paradox
+                                    <span class="speaker">
+                                        Neil Killic
+                                    </span>
                                 </td>
                                 <td class="empty">
-                                    KeyNote: Barry
+                                  
+                                </td>
+                                <td class="empty">
+                                   
+                                </td>
+                                <td class="empty">
+                                   
+                                </td> 
+                                <td class="empty">
+                                   
+                                </td>   
+                                 <td class="empty">
+                                   
+                                </td>                            
+                            </tr>
+                            <tr>
+                                <td>
+                                     18:50h/19:00h
+                                </td>
+                                <td class="event">
+                                    Cierre
                                 </td>
                                 <td class="empty">
                                   
