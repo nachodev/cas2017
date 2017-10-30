@@ -67,13 +67,15 @@
             var getTemplate = function(talk){
                 var template = '<div id="talk-modal">';
                 template += '<span class="close" onClick="closeDetails()">&times;</span>';
-                template += '<div id="talk-modal-talk">';
+                template += '<div id="talk-modal-talk">';              
                 template += '<h3> ' + talk.title + '</h3>';  
                 template += '<p><b> ' + talk.format + '</b></p>';             
                 template += '<p> ' + talk.description + '</p>';
                 template += '</div>';
                 template += '<div id="talk-modal-speaker">';
-                
+                if(talk['team-image']){
+                    template += '<p style="text-align: center"> <img style="width: 250px; height: auto; margin-bottom: 20px;" src="images/speakers/' + talk['team-image'] + '"></p>';                
+                } 
                 template += '<h4> ' + talk.name + '</h4>';    
                 if(talk['image']){
                     template += '<p> <img src="images/speakers/' + talk['image'] + '"></p>';                
